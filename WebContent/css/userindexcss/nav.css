@@ -1,0 +1,50 @@
+#lhpopciones {
+	
+	POSITION: absolute;
+	z-index:21474836;
+	WIDTH: 100%;
+	margin-right:0px;
+	border-bottom: 4px solid #ffa500;
+	TOP: 0px;
+	left: 0px;
+	right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #D8DAE2;
+	min-height: 50px;
+	height:auto;/*IE里高度自动*/
+	/*height:50px;再为IE设置一个固定高度值*/
+	text-align: left;
+	
+}
+
+#lhpopciones a {
+	margin-left: 6px;
+	margin-right: 6px;
+	text-decoration: none;
+}
+
+
+#tools {
+	text-align: right;
+}
+
+#login {
+	position:absolute,
+	top : 100px,
+	z-index:2147483647;
+	font-size: 14px;
+	background-color: #3399CC;
+	border: 3px outset #6699FF;
+	display:none;
+		width:408px;
+		height:178px;
+}
+
+
+.icon{
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	
+}

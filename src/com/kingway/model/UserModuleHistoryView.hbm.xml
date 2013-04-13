@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-24 10:03:09 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserModuleHistoryView" table="user_module_history_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.UserModuleHistoryViewId">
+            <key-property name="userModuleStyle" type="string">
+                <column name="userModuleStyle" />
+            </key-property>
+            <key-property name="headCssAndScript" type="string">
+                <column name="headCssAndScript" length="16777215" />
+            </key-property>
+            <key-property name="bodyCssAndScript" type="string">
+                <column name="bodyCssAndScript" length="16777215" />
+            </key-property>
+            <key-property name="updateTime" type="timestamp">
+                <column name="updateTime" length="0" />
+            </key-property>
+            <key-property name="content" type="string">
+                <column name="content" length="16777215" />
+            </key-property>
+            <key-property name="bufferId" type="long">
+                <column name="bufferId" />
+            </key-property>
+            <key-property name="userModuleId" type="long">
+                <column name="userModuleId" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

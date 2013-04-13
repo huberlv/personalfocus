@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- 开发完成后记得改为false -->
+		<property name="show_sql">false</property>
+		<!-- 最小连接数 -->
+		<property name="c3p0.min_size">6</property>
+		<!-- 最大连接数 -->
+		<property name="c3p0.max_size">100</property>
+		<!-- 获得连接的超时时间,如果超过这个时间,会抛出异常，单位毫秒 -->
+		<property name="c3p0.timeout">1800</property>
+		<!-- 最大的PreparedStatement的数量 -->
+		<property name="c3p0.max_statements">50</property>
+		<!-- 每隔120秒检查连接池里的空闲连接 ，单位是秒-->
+		<property name="c3p0.idle_test_period">60</property>
+		<!-- 当连接池里面的连接用完的时候，C3P0一下获取的新的连接数 -->
+		<property name="c3p0.acquire_increment">6</property>
+
+
+		<mapping resource="com/kingway/model/MonitorWebInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/ModuleInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/UserModuleSubgroupInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/ContentBuffer.hbm.xml" />
+		<mapping resource="com/kingway/model/MessageNeedToBeSendView.hbm.xml" />
+		<mapping resource="com/kingway/model/ModulesLinkView.hbm.xml" />
+		<mapping resource="com/kingway/model/ModuleInfoShowView.hbm.xml" />
+		<mapping resource="com/kingway/model/ModuleNeedToBeUpdateView.hbm.xml" />
+		<mapping resource="com/kingway/model/ContentNeedToBeSendView.hbm.xml" />
+		<mapping resource="com/kingway/model/MailNeedToBeSendView.hbm.xml" />
+		<mapping resource="com/kingway/model/ReceiverView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserModuleInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/UserInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/UserDefaultReceiveInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/UserActivecode.hbm.xml" />
+		<mapping resource="com/kingway/model/ContentReceiver.hbm.xml" />
+		<mapping resource="com/kingway/model/UsermoduleView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserReceiveInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/MonitorByJsView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserSpaceInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/ManagerInfo.hbm.xml" />
+		<mapping resource="com/kingway/model/UserSubscribe.hbm.xml" />
+		<mapping resource="com/kingway/model/UserModuleContents.hbm.xml" />
+		<mapping resource="com/kingway/model/CheckUpdateView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserSpaceModuleInfoShowView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserModuleHistoryView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserModuleHistoryListView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserModuleDisingoreView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserFocusWebModuleView.hbm.xml" />
+		<mapping resource="com/kingway/model/UserModuleUpdatepathsView.hbm.xml" />
+		<mapping resource="com/kingway/model/CheckUpdateUserModuleView.hbm.xml" />
+		<mapping resource="com/kingway/model/FailModuleView.hbm.xml" />
+		<mapping resource="com/kingway/model/ModuleHistoyNumView.hbm.xml" />
+		<mapping resource="com/kingway/model/FailWebInfoView.hbm.xml" />
+		<mapping resource="com/kingway/model/WebUserModulesView.hbm.xml" />
+		<mapping resource="com/kingway/model/ModuleUserModulesView.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

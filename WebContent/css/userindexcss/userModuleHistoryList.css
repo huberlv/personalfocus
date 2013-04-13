@@ -1,0 +1,40 @@
+.history{
+	float:left;
+	margin:5px 5px;
+		border-color: -moz-use-text-color #CCDFF2 #CCDFF2;
+	border: 2px solid #CCDFF2;
+	border-style: none solid solid;
+	border-width: medium 2px 2px;
+}
+
+.tabTitle{
+   padding-left: 3px;
+   padding-right: 3px;
+}
+
+.unDisplayGroupStyle{
+	background: no-repeat  url(/personalfocus/images/tabUndisplay.png);
+}
+.displayGroupStyle{
+	background:  no-repeat  url(/personalfocus/images/tabDisplay.png);
+}
+
+
+UL {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-TOP: 0px
+}
+
+
+LI {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 2px 2px;
+	PADDING-TOP: 0px;
+	float:left;
+}
+

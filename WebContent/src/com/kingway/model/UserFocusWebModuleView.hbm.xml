@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-31 21:55:46 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserFocusWebModuleView" table="user_focus_web_module_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.UserFocusWebModuleViewId">
+            <key-property name="webAddress" type="string">
+                <column name="webAddress" />
+            </key-property>
+            <key-property name="modulePath" type="string">
+                <column name="modulePath" length="65535" />
+            </key-property>
+            <key-property name="userModuleId" type="long">
+                <column name="userModuleId" />
+            </key-property>
+            <key-property name="userId" type="long">
+                <column name="userId" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

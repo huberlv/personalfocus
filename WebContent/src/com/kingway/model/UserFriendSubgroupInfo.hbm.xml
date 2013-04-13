@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2011-1-23 9:52:10 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserFriendSubgroupInfo" table="user_friend_subgroup_info" catalog="online_focus">
+        <id name="subgroupId" type="java.lang.Long">
+            <column name="subgroupId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userInfo" class="com.kingway.model.UserInfo" fetch="select">
+            <column name="userId" not-null="true" />
+        </many-to-one>
+        <property name="groupName" type="string">
+            <column name="groupName" length="10" not-null="true" />
+        </property>
+        <property name="groupType" type="int">
+            <column name="groupType" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

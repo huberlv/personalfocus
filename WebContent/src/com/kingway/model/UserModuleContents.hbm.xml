@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-18 22:22:50 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserModuleContents" table="user_module_contents" catalog="online_focus">
+        <id name="contentId" type="java.lang.Long">
+            <column name="contentId" />
+            <generator class="identity" />
+        </id>
+        <property name="userModuleContent" type="string">
+            <column name="userModuleContent" length="16777215" not-null="true" />
+        </property>
+        <property name="userModuleId" type="long">
+            <column name="userModuleId" not-null="true" />
+        </property>
+        <property name="updateTime" type="timestamp">
+            <column name="updateTime" length="0" not-null="true" />
+        </property>
+        <property name="contentType" type="int">
+            <column name="contentType" not-null="true" />
+        </property>
+        <property name="alreadySendMessage" type="int">
+            <column name="alreadySendMessage" not-null="true" />
+        </property>
+        <property name="alreadySendMail" type="int">
+            <column name="alreadySendMail" not-null="true" />
+        </property>
+        <property name="ignoreByUser" type="int">
+            <column name="ignoreByUser" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

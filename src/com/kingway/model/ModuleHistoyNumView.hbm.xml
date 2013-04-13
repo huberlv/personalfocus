@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2011-3-12 23:18:02 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ModuleHistoyNumView" table="module_histoy_num_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.ModuleHistoyNumViewId">
+            <key-property name="num" type="big_decimal">
+                <column name="num" precision="24" scale="4" />
+            </key-property>
+            <key-property name="userModuleId" type="long">
+                <column name="userModuleId" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

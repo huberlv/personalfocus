@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2011-1-23 9:52:10 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserFriendsView" table="user_friends_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.UserFriendsViewId">
+            <key-property name="userId" type="long">
+                <column name="userId" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="userName" length="10" />
+            </key-property>
+            <key-property name="friendId" type="long">
+                <column name="friendId" />
+            </key-property>
+            <key-property name="friendInfo" type="string">
+                <column name="friendInfo" length="20" />
+            </key-property>
+            <key-property name="groupName" type="string">
+                <column name="groupName" length="10" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

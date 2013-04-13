@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.MessageNeedToBeSendView" table="message_need_to_be_send_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.MessageNeedToBeSendViewId">
+            <key-property name="monitorType" type="java.lang.Integer">
+                <column name="monitorType" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="userName" length="10" />
+            </key-property>
+            <key-property name="content" type="string">
+                <column name="content" length="16777215" />
+            </key-property>
+            <key-property name="updateTime" type="timestamp">
+                <column name="updateTime" length="0" />
+            </key-property>
+            <key-property name="phone" type="string">
+                <column name="phone" length="12" />
+            </key-property>
+            <key-property name="userModuleName" type="string">
+                <column name="userModuleName" length="20" />
+            </key-property>
+            <key-property name="websiteName" type="string">
+                <column name="websiteName" length="20" />
+            </key-property>
+            <key-property name="sendId" type="long">
+                <column name="sendId" />
+            </key-property>
+            <key-property name="maxReceiveNum" type="int">
+                <column name="maxReceiveNum" />
+            </key-property>
+            <key-property name="receiveId" type="long">
+                <column name="receiveId" />
+            </key-property>
+            <key-property name="receiveType" type="int">
+                <column name="receiveType" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserInfo" table="user_info" catalog="online_focus">
+        <id name="userId" type="java.lang.Long">
+            <column name="userId" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="userName" length="10" not-null="true" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="2" />
+        </property>
+        <property name="birthday" type="date">
+            <column name="birthday" length="0" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" not-null="true" />
+        </property>
+        <property name="mailbox" type="string">
+            <column name="mailbox" length="30" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="12" />
+        </property>
+        <property name="registrationTime" type="timestamp">
+            <column name="registrationTime" length="0" not-null="true" />
+        </property>
+        <property name="enable" type="int">
+            <column name="enable" not-null="true" />
+        </property>
+        <property name="userType" type="java.lang.Integer">
+            <column name="userType" />
+        </property>
+        <property name="userPoint" type="java.lang.Integer">
+            <column name="userPoint" />
+        </property>
+        <set name="userSubscribesForSubscribeUserId" table="user_subscribe" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="subscribeUserId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserSubscribe" />
+        </set>
+        <set name="userDefaultReceiveInfos" table="user_default_receive_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserDefaultReceiveInfo" />
+        </set>
+        <set name="userSubscribesForUserId" table="user_subscribe" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserSubscribe" />
+        </set>
+        <set name="userSpaceInfos" table="user_space_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserSpaceInfo" />
+        </set>
+        <set name="userActivecodes" table="user_activecode" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserActivecode" />
+        </set>
+        <set name="userModuleInfos" table="user_module_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserModuleInfo" />
+        </set>
+        <set name="userModuleSubgroupInfos" table="user_module_subgroup_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserModuleSubgroupInfo" />
+        </set>
+    </class>
+</hibernate-mapping>

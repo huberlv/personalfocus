@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ModuleInfo" table="module_info" catalog="online_focus">
+        <id name="moduleId" type="java.lang.Long">
+            <column name="moduleId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="monitorWebInfo" class="com.kingway.model.MonitorWebInfo" fetch="join">
+            <column name="webId" not-null="true" />
+        </many-to-one>
+        <property name="modulePath" type="string">
+            <column name="modulePath" length="65535" />
+        </property>
+        <property name="failTimes" type="int">
+            <column name="failTimes" not-null="true" />
+        </property>
+        <property name="enable" type="int">
+            <column name="enable" not-null="true" />
+        </property>
+        <property name="updateContent" type="string">
+            <column name="updateContent" length="16777215" not-null="true" />
+        </property>
+        <property name="rssContent" type="string">
+            <column name="rssContent" length="16777215" not-null="false" />
+        </property>
+         <property name="defineSource" type="string">
+            <column name="defineSource" length="16777215" not-null="false" />
+        </property>
+        <property name="userCount" type="java.lang.Long">
+            <column name="userCount" />
+        </property>
+        <set name="contentBuffers" table="content_buffer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="moduleId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.ContentBuffer" />
+        </set>
+        <set name="userModuleInfos" table="user_module_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="moduleId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserModuleInfo" />
+        </set>
+    </class>
+</hibernate-mapping>

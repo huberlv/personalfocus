@@ -1,0 +1,23 @@
+body {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background-color: #FFFFFF;
+	margin: 0px 0px;
+}
+.updateStyle{
+	background-color: #00FF33 !important;
+   /* background-image: url(/personalfocus/images/userIndexImage/new.gif); 
+	background-repeat: no-repeat;
+	background-position:right top;
+			background-image: url(/personalfocus/images/bg.png);
+			url(/personalfocus/images/userIndexImage/lr.png) left right (100% 2px) no-repeat,
+	background-repeat: repeat-x;
+	border:2px solid #FF0000;*/
+     
+}

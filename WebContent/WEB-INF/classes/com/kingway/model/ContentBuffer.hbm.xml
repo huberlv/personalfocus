@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ContentBuffer" table="content_buffer" catalog="online_focus">
+        <id name="bufferId" type="java.lang.Long">
+            <column name="bufferId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one  name="moduleInfo" class="com.kingway.model.ModuleInfo" fetch="select">
+            <column name="moduleId" not-null="true" />
+        </many-to-one>
+        <property name="content" type="string">
+            <column name="content" length="16777215" not-null="true" />
+        </property>
+        <property name="updateTime" type="timestamp">
+            <column name="updateTime" length="0" not-null="true" />
+        </property>
+        <property name="updateType" type="int">
+            <column name="updateType" not-null="true" />
+        </property>
+        <set name="contentReceivers" table="content_receiver" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="bufferId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.ContentReceiver" />
+        </set>
+    </class>
+</hibernate-mapping>

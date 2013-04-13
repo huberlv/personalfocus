@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>$title</title>
+		<link>http://www.w3cschool.cn</link>
+		<description>/title/</description>
+		<category>News</category>
+		<cloud></cloud>
+		<copyright>2010</copyright>
+		<docs></docs>
+		<generator></generator>
+		<image></image>
+		<language></language>
+		<lastBuildDate></lastBuildDate>
+		<managingEditor>lvhongpei@126.com</managingEditor>
+		<pubDate></pubDate>
+		<rating></rating>
+		<ttl></ttl>
+		<webMaster>lvhongpei@126.com</webMaster>
+	</channel>	
+</rss>

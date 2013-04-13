@@ -1,0 +1,13 @@
+.web{
+	text-align:left;
+
+    white-space:nowrap;
+   overflow:hidden;
+
+}
+.moduel{
+
+	word-wrap: break-all;
+    word-break: normal;
+	    float: left;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-15 10:27:00 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.CheckUpdateView" table="check_update_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.CheckUpdateViewId">
+            <key-property name="sendId" type="long">
+                <column name="sendId" />
+            </key-property>
+            <key-property name="bufferId" type="long">
+                <column name="bufferId" />
+            </key-property>
+            <key-property name="userModuleId" type="long">
+                <column name="userModuleId" />
+            </key-property>
+            <key-property name="moduleId" type="long">
+                <column name="moduleId" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

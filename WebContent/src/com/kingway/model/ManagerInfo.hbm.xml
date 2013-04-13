@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ManagerInfo" table="manager_info" catalog="online_focus">
+        <id name="managerId" type="java.lang.Long">
+            <column name="managerId" />
+            <generator class="identity" />
+        </id>
+        <property name="managerName" type="string">
+            <column name="managerName" length="10" />
+        </property>
+        <property name="managerPsw" type="string">
+            <column name="managerPsw" length="12" />
+        </property>
+    </class>
+</hibernate-mapping>

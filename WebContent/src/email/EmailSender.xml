@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailSender>
+  <sender id="1">
+    <host></host>
+    <from></from>
+    <psw></psw>
+  </sender>
+  <sender id="2">
+    <host>smtp.sina.com</host>
+    <from></from>
+    <psw></psw>
+  </sender>
+</EmailSender>

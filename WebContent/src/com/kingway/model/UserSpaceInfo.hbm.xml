@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserSpaceInfo" table="user_space_info" catalog="online_focus">
+        <id name="userSpaceId" type="java.lang.Long">
+            <column name="userSpaceId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userInfo" class="com.kingway.model.UserInfo" fetch="select">
+            <column name="userId" not-null="true" />
+        </many-to-one>
+        <property name="accessType" type="int">
+            <column name="accessType" not-null="true" />
+        </property>
+        <property name="question" type="string">
+            <column name="question" />
+        </property>
+        <property name="answer" type="string">
+            <column name="answer" length="20" />
+        </property>
+        <property name="userSpaceName" type="string">
+            <column name="userSpaceName" length="20" />
+        </property>
+        <property name="totalAccesses" type="java.lang.Long">
+            <column name="totalAccesses" />
+        </property>
+        <property name="userImage" type="string">
+            <column name="userImage" length="64" />
+        </property>
+        <property name="userSpaceStyle" type="string">
+            <column name="userSpaceStyle" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

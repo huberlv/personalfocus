@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-18 22:22:50 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ModulesLinkView" table="modules_link_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.ModulesLinkViewId">
+            <key-property name="userName" type="string">
+                <column name="userName" length="10" />
+            </key-property>
+            <key-property name="phone" type="string">
+                <column name="phone" length="12" />
+            </key-property>
+            <key-property name="receiveId" type="long">
+                <column name="receiveId" />
+            </key-property>
+            <key-property name="userModuleId" type="long">
+                <column name="userModuleId" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

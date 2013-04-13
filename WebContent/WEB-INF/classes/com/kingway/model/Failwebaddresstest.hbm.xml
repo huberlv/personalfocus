@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2011-1-23 9:52:10 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.Failwebaddresstest" table="failwebaddresstest" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.FailwebaddresstestId">
+            <key-property name="webAddress" type="string">
+                <column name="webAddress" />
+            </key-property>
+            <key-property name="failTimes" type="int">
+                <column name="failTimes" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ReceiverView" table="receiver_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.ReceiverViewId">
+            <key-property name="userModuleId" type="long">
+                <column name="userModuleId" />
+            </key-property>
+            <key-property name="moduleId" type="long">
+                <column name="moduleId" />
+            </key-property>
+            <key-property name="monitorType" type="java.lang.Integer">
+                <column name="monitorType" />
+            </key-property>
+            <key-property name="receiveType" type="int">
+                <column name="receiveType" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

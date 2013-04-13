@@ -1,0 +1,26 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 30px;
+	background-color: #FFFFFF;
+}
+#helpPage ol{
+	list-style: decimal;
+}
+	
+#Layer1 li{
+	margin-left: -20px;
+	
+}
+
+#Layer1 {
+	width: 800px;
+	padding: 5px;
+	word-break:break-all;
+}
+
+#Layer1 p{
+	word-break:break-all;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserDefaultReceiveInfo" table="user_default_receive_info" catalog="online_focus">
+        <id name="defaultReceiveId" type="java.lang.Long">
+            <column name="defaultReceiveId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userInfo" class="com.kingway.model.UserInfo" fetch="select">
+            <column name="userId" not-null="true" />
+        </many-to-one>
+        <property name="startTime" type="time">
+            <column name="startTime" length="0" not-null="true" />
+        </property>
+        <property name="stopTime" type="time">
+            <column name="stopTime" length="0" not-null="true" />
+        </property>
+        <property name="receiveType" type="int">
+            <column name="receiveType" not-null="true" />
+        </property>
+        <property name="sendFrequency" type="timestamp">
+            <column name="sendFrequency" length="0" not-null="true" />
+        </property>
+        <property name="maxReceiveNum" type="int">
+            <column name="maxReceiveNum" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+.farbtastic {
+  position: relative;
+}
+.farbtastic * {
+  position: absolute;
+  cursor: crosshair;
+}
+.farbtastic, .farbtastic .wheel {
+  width: 195px;
+  height: 195px;
+}
+.farbtastic .color, .farbtastic .overlay {
+  top: 47px;
+  left: 47px;
+  width: 101px;
+  height: 101px;
+}
+.farbtastic .wheel {
+  background: url(/personalfocus/images/wheel.png) no-repeat;
+  width: 195px;
+  height: 195px;
+  left:0px;
+}
+.farbtastic .overlay {
+  background: url(/personalfocus/images/mask.png) no-repeat;
+}
+.farbtastic .marker {
+  width: 17px;
+  height: 17px;
+  margin: -8px 0 0 -8px;
+  overflow: hidden; 
+  background: url(/personalfocus/images/marker.png) no-repeat;
+}
+
+
+#colorPicker {
+	position:absolute;
+	top: 50px;
+	right: 25px;
+	z-index: 2147483647;
+}
+#picker {
+	 	float: right;
+}
+
+.colorwell {
+     border: 2px solid #fff;
+     width: 6em;
+     text-align: center;
+     cursor: pointer;
+   }
+.colorwell-selected {
+     border: 2px solid #000;
+     font-weight: bold;
+   }
+   
+.themeTitle a{
+	text-decoration: none;
+	text-align: center;
+	
+}
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-8 23:39:20 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserModuleInfo" table="user_module_info" catalog="online_focus">
+        <id name="userModuleId" type="java.lang.Long">
+            <column name="userModuleId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="moduleInfo" class="com.kingway.model.ModuleInfo" fetch="select">
+            <column name="moduleId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="userModuleSubgroupInfo" class="com.kingway.model.UserModuleSubgroupInfo" lazy="false">
+            <column name="subgroupId" />
+        </many-to-one>
+        <many-to-one name="userInfo" class="com.kingway.model.UserInfo" fetch="select">
+            <column name="userId" not-null="true" />
+        </many-to-one>
+        <property name="userModuleName" type="string">
+            <column name="userModuleName" length="20" not-null="true" />
+        </property>
+        <property name="websiteName" type="string">
+            <column name="websiteName" length="20" not-null="true" />
+        </property>
+        <property name="enable" type="int">
+            <column name="enable" not-null="true" />
+        </property>
+        <property name="monitorFrequency" type="time">
+            <column name="monitorFrequency" length="0" not-null="true" />
+        </property>
+        <property name="userModuleStyle" type="string">
+            <column name="userModuleStyle" />
+        </property>
+        <property name="accessType" type="java.lang.Integer">
+            <column name="accessType" />
+        </property>
+        <property name="monitorType" type="java.lang.Integer">
+            <column name="monitorType" />
+        </property>
+        <property name="unCheckPaths" type="string">
+            <column name="unCheckPaths" length="65535" />
+        </property>
+        <set name="userReceiveInfos" table="user_receive_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userModuleId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.UserReceiveInfo" />
+        </set>
+        <set name="contentReceivers" table="content_receiver" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="userModuleId" not-null="true" />
+            </key>
+            <one-to-many class="com.kingway.model.ContentReceiver" />
+        </set>
+    </class>
+</hibernate-mapping>

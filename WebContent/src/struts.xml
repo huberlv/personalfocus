@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.serve.static.browserCache" value="false" />   <!-- 生产环境改为true -->
+	<constant name="struts.configuration.xml.reload" value="true" />  <!-- 生产环境改为false -->
+	<constant name="struts.devMode" value="true" />  <!-- 生产环境改为false -->
+	<constant name="struts.multipart.maxSize" value="100100000000" />
+	 
+
+	<package name="index" namespace="/index" extends="struts-default">
+	<!-- 异常拦截器 
+		<global-results>
+			<result name="allException">/WEB-INF/pages/userException.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="allException" exception="java.lang.Exception">
+			</exception-mapping>
+		</global-exception-mappings>-->  
+		<action name="showHelp" class="com.kingway.action.ShowHelpAction"
+			method="showHelp">
+			<result name="success">/WEB-INF/pages/help.jsp</result>
+		</action>
+		 <action name="showDemonstrate" class="com.kingway.action.ShowDemonstrateAction"
+			method="show">
+			<result name="success">/WEB-INF/pages/demonstrate.jsp</result>
+		</action>
+
+		
+		<action name="showindex" class="com.kingway.action.ShowIndexAction"
+			method="showindex">
+			<result name="success">/WEB-INF/pages/index.jsp</result>
+		</action>
+		<action name="login" class="com.kingway.action.LoginSuccessAction"
+			method="login">
+			<result name="success" type="redirect">/user/myfocus</result>
+		</action>
+		<action name="checklogin" class="com.kingway.action.CheckLoginAction"
+			method="checkLogin">
+			<result name="success" type="redirect">/index/login</result>
+			<result name="input">/WEB-INF/pages/index.jsp</result>
+		</action>
+		<action name="showregist" class="com.kingway.action.ShowRegistAction"
+			method="showRegist">
+			<result name="success">/WEB-INF/pages/regist.jsp</result>
+		</action>
+		<action name="doregist" class="com.kingway.action.RegistAction"
+			method="doRegist">
+			<result name="success">/WEB-INF/pages/registsuccess.jsp</result>
+		</action>
+
+		<action name="rand" class="com.kingway.action.RandomAction">  <!-- 验证码 -->
+			<result type="stream">
+				<param name="contentType">image/jpeg</param>
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+
+		<action name="activeAccount" class="com.kingway.action.ActiveAccountAction"
+			method="activeAccount">
+			<result name="success">/WEB-INF/pages/activeSuccess.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="user" namespace="/user" extends="struts-default">
+	    <!-- 异常拦截器
+		<global-results>
+			<result name="allException">/WEB-INF/pages/userException.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="allException" exception="java.lang.Exception">
+			</exception-mapping>
+		</global-exception-mappings> -->
+		
+		<action name="rssfeed" class="com.kingway.action.RssFeedAction"
+			method="getRSSContent">
+			<result name="OK">/WEB-INF/pages/rssContent.jsp</result>
+			<result name="fail">/WEB-INF/pages/error.jsp</result>
+		</action>
+		<action name="browserIngoreUpdate" class="com.kingway.action.BrowserIngoreUpdateAction"
+			method="ingore">
+			<result name="success"></result>
+		</action>
+		<action name="browserCheckUpdateUserModule"
+			class="com.kingway.action.BrowserCheckUpdateUserModuleAction" method="checkUpdateUserModule">
+			<result name="success"></result>
+		</action>
+		<action name="broswerLogin" class="com.kingway.action.BroswerLoginAction"
+			method="checkLogin">
+			<result name="fail">/WEB-INF/pages/broswerLoginFail.jsp</result>
+			<result name="success">/WEB-INF/pages/broswerLoginSuccess.jsp</result>
+			
+		</action>
+		<action name="recognizeUpdate" class="com.kingway.action.RecognizeUpdateAction"
+			method="recognizeUpdate">   
+			<result name="success">/WEB-INF/pages/empty.jsp</result>
+		</action>
+		<action name="checkModuleExists" class="com.kingway.action.CheckModuleExistsAction"
+			method="checkModuleExists">
+			<result name="success"></result>
+		</action>
+		<action name="checkModuleUpdatePaths" class="com.kingway.action.CheckModuleUpdatePathsAction"
+			method="checkModuleUpdatePaths">
+			<result name="success"></result>
+		</action>
+		<action name="myfocus" class="com.kingway.action.ShowMyFocusAction"
+			method="myfocus">
+			<result name="success">/WEB-INF/pages/userindex.jsp</result>
+		</action>
+		<action name="addModuleByBrower" class="com.kingway.action.AddModuleByBrowerAction"
+			method="addModule">
+			<result name="success"></result>
+		</action>
+		<action name="showfocusmanagement" class="com.kingway.action.ShowFocusManagementAction"
+			method="showfocusmanagement">
+			<result name="success">/WEB-INF/pages/focusmanagement1.jsp</result>
+		</action>
+		<action name="showfocusmanagementdetail"
+			class="com.kingway.action.ShowFocusManagementDetailAction" method="showfocusmanagementdetail">
+			<result name="success">/WEB-INF/pages/focusmanagement2.jsp</result>
+		</action>
+		<action name="userinfo" class="com.kingway.action.ShowUserInfoAction"
+			method="userinfo">
+			<result name="success">/WEB-INF/pages/userinfo.jsp</result>
+		</action>
+		
+		<action name="userSpaceManager" class="com.kingway.action.UserSpaceManagerAction"
+			method="userSpaceInfo">
+			<result name="success">/WEB-INF/pages/userSpaceManager.jsp</result>
+		</action>
+		
+		<action name="showaddmonitor" class="com.kingway.action.ShowAction"
+			method="show">
+			<result name="success">/WEB-INF/pages/addMonitor.jsp</result>
+			<result name="fail">/WEB-INF/pages/error.jsp</result>
+		</action>
+		<action name="addMonitorByManual" class="com.kingway.action.AddMonitorByManualAction"
+			method="show">
+			<result name="success">/WEB-INF/pages/addMonitorByManual.jsp</result>
+			<result name="fail">/WEB-INF/pages/error.jsp</result>
+		</action>
+		<action name="updateuserinfo" class="com.kingway.action.UpdateUserInfoAction"
+			method="updateuserinfo">
+			<result name="success" type="redirect">userinfo</result>
+		</action>
+		<action name="updateUserSpaceInfo" class="com.kingway.action.UpdateUserSpaceInfoAction"
+			method="updateUserSpaceInfo">
+			<result name="success" type="redirect">userSpaceManager</result>
+		</action>
+
+		<action name="updatemodulelist" class="com.kingway.action.UpdateModuleListAction"
+			method="updatemodulelist">
+			<result name="success" type="redirect">showfocusmanagement</result>
+		</action>
+
+		<action name="showconfirm" class="com.kingway.action.ShowConfirmAction"
+			method="showconfirm">
+			<result name="success">/WEB-INF/pages/confirmmessage.jsp</result>
+		</action>
+
+		<action name="showWebPage" class="com.kingway.action.ShowWebPageAction"
+			method="showWebPage">
+			<result name="htmlpage">/WEB-INF/pages/showWebPage.jsp</result>
+			<result name="filepage">/WEB-INF/pages/showFilePage.jsp</result>
+			<result name="fail">/WEB-INF/pages/userException.jsp</result>
+		</action>
+		<action name="showUserSpace" class="com.kingway.action.ShowUserSpaceAction"
+			method="showUserSpace">
+			<result name="onlyFriendAccess">/WEB-INF/pages/onlyFriendAccess.jsp</result>
+			<result name="userQuestion">/WEB-INF/pages/userQuestion.jsp</result>
+			<result name="access">/WEB-INF/pages/showUserSpace.jsp</result>
+			<result name="onlyOwnerAccess">/WEB-INF/pages/onlyOwnerAccess.jsp</result>
+			<result name="wrong">/WEB-INF/pages/spaceNotExits.jsp</result>
+		</action>
+		<action name="showMyFocosIframe" class="com.kingway.action.ShowMyFocosIframeAction"
+			method="showMyFocosIframe">
+			<result name="success">/WEB-INF/pages/showMyFocosIframe.jsp</result>
+		</action>
+		<action name="showUserFocosIframe" class="com.kingway.action.ShowUserFocosIframe"
+			method="showUserFocosIframe">
+			<result name="success">/WEB-INF/pages/showUserFocosIframe.jsp</result>
+		</action>
+		<action name="definePage" class="com.kingway.action.DefinePageAction"
+			method="showWebPage">
+			<result name="definePage">/WEB-INF/pages/definePage.jsp</result>
+		</action>
+		<action name="showDefaultReceive" class="com.kingway.action.ShowAction"
+			method="show">
+
+			<result name="success">/WEB-INF/pages/focusmanagement3.jsp</result>
+			<result name="fail">/WEB-INF/pages/error.jsp</result>
+		</action>
+		<action name="exe*" class="com.kingway.action.ShowDefaultReceiveInfoAction"
+			method="{1}">
+			<result name="updateDefault">/WEB-INF/pages/defaultReceive.jsp</result>
+			<result name="showDefault">/WEB-INF/pages/defineDiv.jsp</result>
+			<result name="fail">/WEB-INF/pages/failLogin.jsp</result>
+		</action>
+		<action name="showfileupload" class="com.kingway.action.ShowFileUploadAction"
+			method="showFileUpload">
+			<result name="success">/WEB-INF/pages/XSLfileupload.jsp</result>
+		</action>
+		<action name="upload" class="com.kingway.action.FileUpload"
+			method="execute">
+			<result name="success">/WEB-INF/pages/XSLuploadresult.jsp</result>
+		</action>
+
+		<action name="redirect_*" class="com.kingway.action.CustomModuleAction"
+			method="{1}">
+			<result name="upload">/WEB-INF/pages/deliver_custom.jsp</result>
+			<result name="show">/WEB-INF/pages/update_custom.jsp</result>
+		</action>
+		<action name="manage_*" class="com.kingway.action.ModuleManagementAction"
+			method="{1}">
+			<result name="delmodule" type="redirect">showfocusmanagementdetail
+			</result>
+			<result name="changegroup" type="redirect">showfocusmanagementdetail
+			</result>
+			<result name="delgroup" type="redirect">showGroup</result>
+		</action>
+		<action name="showGroup" class="com.kingway.action.ShowGroupManagementAction"
+			method="showGroup">
+			<result name="success">/WEB-INF/pages/focusmanagement4.jsp</result>
+		</action>
+		<action name="userModuleHistoryList" class="com.kingway.action.ListUserMoudleHistoryAction"
+			method="listUserMoudleHistory">
+			<result name="success">/WEB-INF/pages/userModuleHistoryList.jsp</result>
+			<result name="fail">/WEB-INF/pages/error.jsp</result>
+		</action>
+		<action name="userModuleHistory" class="com.kingway.action.UserMoudleHistoryAction"
+			method="getUserMoudleHistory">
+			<result name="success">/WEB-INF/pages/userModuleHistory.jsp</result>
+			<result name="fail">/WEB-INF/pages/error.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="mobile" namespace="/mobile" extends="struts-default">
+	<!-- 异常拦截器
+		<global-results>
+			<result name="allException">/WEB-INF/pages/mobileException.jsp</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="allException" exception="java.lang.Exception">
+			</exception-mapping>
+		</global-exception-mappings> -->
+		<action name="mobileIndex" class="com.kingway.action.showMobileIndexAction"
+			method="showMobileIndex">
+			<result name="success">/WEB-INF/pages/mobileIndex.jsp</result>
+		</action>
+		<action name="checkmobile" class="com.kingway.action.CheckLoginMobileAction"
+			method="checkmobile">
+			<result name="success"></result>
+		</action>
+		<action name="showMobileUserIndex" class="com.kingway.action.ShowMobileUserIndexAction"
+			method="showMobileUserIndex">
+			<result name="success">/WEB-INF/pages/showMobileUserIndex.jsp</result>
+			<result name="fail">/WEB-INF/pages/failMobileLogin.jsp</result>
+		</action>
+		<action name="showPage" class="com.kingway.action.ShowPageAction"
+			method="showPage">
+			<result name="htmlpage">/WEB-INF/pages/showPage.jsp</result>
+			<result name="filepage">/WEB-INF/pages/showFilePage.jsp</result>
+		</action>
+		<action name="alreadyRead" class="com.kingway.action.ReadAModuleAction"
+			method="readAModule">
+			<result name="success">/WEB-INF/pages/mobileAlreadyRead.jsp</result>
+			<result name="fail">/WEB-INF/pages/mobileAlreadyReadFail.jsp</result>
+		</action>
+		<action name="ingoreUpdate" class="com.kingway.action.AlreadyReadAction"
+			method="alreadyRead">
+			<result name="success">/WEB-INF/pages/mobileAlreadyRead.jsp</result>
+			<result name="fail">/WEB-INF/pages/mobileAlreadyReadFail.jsp</result>
+		</action>
+		<action name="showModule" class="com.kingway.action.ShowModuleAction"
+			method="showModule">
+			<result name="success">/WEB-INF/pages/showModule.jsp</result>
+		</action>
+	</package>
+
+
+	<package name="sysmanagement" namespace="/sysmanagement"
+		extends="struts-default">
+		<action name="modifyModulePath" class="com.kingway.action.ModifyModulePathAction"
+			method="showWebPage">
+			<result name="htmlpage">/WEB-INF/pages/modifyModulePath.jsp</result>
+			<result name="input">/WEB-INF/pages/managerLogin.jsp</result>
+			<result name="fail">/WEB-INF/pages/error.jsp</result>
+		</action>
+		<action name="showSource" class="com.kingway.action.ShowSourceAction"
+			method="showSource">
+			<result name="OK">/WEB-INF/pages/showSource.jsp</result>
+			<result name="input">/WEB-INF/pages/managerLogin.jsp</result>
+		</action>
+		<action name="showmanagementlogin" class="com.kingway.action.ShowManagementLoginAction"
+			method="showmanagementlogin">
+			<result name="success">/WEB-INF/pages/managerLogin.jsp</result>
+		</action>
+		<action name="checkLogin" class="com.kingway.action.CheckLoginManagementAction"
+			method="checkLogin">
+			<result name="input">/WEB-INF/pages/managerLogin.jsp</result>
+			<result name="success" type="redirect">showsysmanagement</result>
+		</action>
+		<action name="showsysmanagement" class="com.kingway.action.ShowSysManagementAction"
+			method="showsysmanagement">
+			<result name="success">/WEB-INF/pages/sysmanagement.jsp</result>
+			<result name="fail">/WEB-INF/pages/managerLogin.jsp</result>
+
+		</action>
+	</package>
+
+</struts>

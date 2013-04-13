@@ -1,0 +1,662 @@
+2012-05-21 20:01:18 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@7e0be0c5 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8099d4b5 [ acquireIncrement -> 6, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15w8nuvh0vi1f8ebyy|e1f305, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 6, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@4abc8689 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15w8nuvh0vi1f8ebyy|15c13ef, jdbcUrl -> jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15w8nuvh0vi1f8ebyy|ea3cdf, numHelperThreads -> 3 ]
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] RDBMS: MySQL, version: 5.0.51b-community-nt
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+2012-05-21 20:01:19 [org.hibernate.dialect.Dialect]-[INFO] Using dialect: org.hibernate.dialect.MySQLDialect
+2012-05-21 20:01:19 [org.hibernate.transaction.TransactionFactoryFactory]-[INFO] Using default transaction strategy (direct JDBC transactions)
+2012-05-21 20:01:19 [org.hibernate.transaction.TransactionManagerLookupFactory]-[INFO] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic flush during beforeCompletion(): disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic session close at end of transaction: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch size: 15
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch updates for versioned data: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Scrollable result sets: enabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC3 getGeneratedKeys(): enabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Connection release mode: auto
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Maximum outer join fetch depth: 2
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Default batch fetch size: 1
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Generate SQL with comments: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL updates by primary key: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL inserts for batching: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-05-21 20:01:19 [org.hibernate.hql.ast.ASTQueryTranslatorFactory]-[INFO] Using ASTQueryTranslatorFactory
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Query language substitutions: {}
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] JPA-QL strict compliance: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Second-level cache: enabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Query cache: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Cache provider: org.hibernate.cache.NoCacheProvider
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Optimize cache for minimal puts: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Structured second-level cache entries: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Statistics: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Deleted entity synthetic identifier rollback: disabled
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Default entity-mode: pojo
+2012-05-21 20:01:19 [org.hibernate.cfg.SettingsFactory]-[INFO] Named query checking : enabled
+2012-05-21 20:01:20 [org.hibernate.impl.SessionFactoryImpl]-[INFO] building session factory
+2012-05-21 20:01:21 [org.hibernate.impl.SessionFactoryObjectFactory]-[INFO] Not binding factory to JNDI, no JNDI name configured
+2012-05-21 20:01:32 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.startUpdate()
+2012-05-21 20:06:56 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-05-21 20:07:18 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-21 20:07:53 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-21 20:08:01 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-21 20:08:06 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateUserModule.exitCheck()
+2012-05-21 20:08:09 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-05-21 20:09:00 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateUserModule.exitCheck()
+2012-05-21 20:09:01 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.stopUpdate()
+2012-05-24 21:12:51 [org.directwebremoting.impl.StartupUtil]-[INFO] DWR Version 2.0.3 starting.
+2012-05-24 21:12:51 [org.directwebremoting.impl.StartupUtil]-[INFO] - Servlet Engine: Apache Tomcat/6.0.20
+2012-05-24 21:12:51 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Version:   1.6.0_18
+2012-05-24 21:12:51 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Vendor:    Sun Microsystems Inc.
+2012-05-24 21:12:51 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Document is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-05-24 21:12:51 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Element is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-05-24 21:13:01 [org.hibernate.cfg.Environment]-[INFO] Hibernate 3.2.6
+2012-05-24 21:13:01 [org.hibernate.cfg.Environment]-[INFO] hibernate.properties not found
+2012-05-24 21:13:01 [org.hibernate.cfg.Environment]-[INFO] Bytecode provider name : cglib
+2012-05-24 21:13:01 [org.hibernate.cfg.Environment]-[INFO] using JDK 1.4 java.sql.Timestamp handling
+2012-05-24 21:13:01 [org.hibernate.cfg.Configuration]-[INFO] configuring from resource: /hibernate.cfg.xml
+2012-05-24 21:13:01 [org.hibernate.cfg.Configuration]-[INFO] Configuration resource: /hibernate.cfg.xml
+2012-05-24 21:13:02 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorWebInfo.hbm.xml
+2012-05-24 21:13:02 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorWebInfo -> monitor_web_info
+2012-05-24 21:13:02 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfo.hbm.xml
+2012-05-24 21:13:02 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfo -> module_info
+2012-05-24 21:13:02 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleSubgroupInfo.hbm.xml
+2012-05-24 21:13:02 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleSubgroupInfo -> user_module_subgroup_info
+2012-05-24 21:13:02 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentBuffer.hbm.xml
+2012-05-24 21:13:02 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentBuffer -> content_buffer
+2012-05-24 21:13:02 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MessageNeedToBeSendView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MessageNeedToBeSendView -> message_need_to_be_send_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModulesLinkView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModulesLinkView -> modules_link_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfoShowView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfoShowView -> module_info_show_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleNeedToBeUpdateView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleNeedToBeUpdateView -> module_need_to_be_update_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentNeedToBeSendView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentNeedToBeSendView -> content_need_to_be_send_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MailNeedToBeSendView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MailNeedToBeSendView -> mail_need_to_be_send_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ReceiverView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ReceiverView -> receiver_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleInfo.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleInfo -> user_module_info
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserInfo.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserInfo -> user_info
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserDefaultReceiveInfo.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserDefaultReceiveInfo -> user_default_receive_info
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserActivecode.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserActivecode -> user_activecode
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentReceiver.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentReceiver -> content_receiver
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UsermoduleView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UsermoduleView -> usermodule_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserReceiveInfo.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserReceiveInfo -> user_receive_info
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorByJsView.hbm.xml
+2012-05-24 21:13:03 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorByJsView -> monitor_by_js_view
+2012-05-24 21:13:03 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceInfo.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceInfo -> user_space_info
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ManagerInfo.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ManagerInfo -> manager_info
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSubscribe.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSubscribe -> user_subscribe
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleContents.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleContents -> user_module_contents
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateView -> check_update_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceModuleInfoShowView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceModuleInfoShowView -> user_space_module_info_show_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryView -> user_module_history_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryListView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryListView -> user_module_history_list_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleDisingoreView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleDisingoreView -> user_module_disingore_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserFocusWebModuleView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserFocusWebModuleView -> user_focus_web_module_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleUpdatepathsView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleUpdatepathsView -> user_module_updatepaths_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateUserModuleView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateUserModuleView -> check_update_user_module_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailModuleView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailModuleView -> fail_module_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleHistoyNumView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleHistoyNumView -> module_histoy_num_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailWebInfoView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailWebInfoView -> fail_web_info_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/WebUserModulesView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.WebUserModulesView -> web_user_modules_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleUserModulesView.hbm.xml
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleUserModulesView -> module_user_modules_view
+2012-05-24 21:13:04 [org.hibernate.cfg.Configuration]-[INFO] Configured SessionFactory: null
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.MonitorWebInfo.moduleInfos -> module_info
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.contentBuffers -> content_buffer
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.userModuleInfos -> user_module_info
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleSubgroupInfo.userModuleInfos -> user_module_info
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ContentBuffer.contentReceivers -> content_receiver
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.userReceiveInfos -> user_receive_info
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.contentReceivers -> content_receiver
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForSubscribeUserId -> user_subscribe
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userDefaultReceiveInfos -> user_default_receive_info
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForUserId -> user_subscribe
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSpaceInfos -> user_space_info
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userActivecodes -> user_activecode
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleInfos -> user_module_info
+2012-05-24 21:13:04 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleSubgroupInfos -> user_module_subgroup_info
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] Connection properties: {user=root, password=****}
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] autocommit mode: false
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.timeout' and c3p0-style property 'c3p0.timeout' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.timeout' will be used and c3p0-style property 'c3p0.timeout' will be ignored!
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.idle_test_period' and c3p0-style property 'c3p0.idle_test_period' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.idle_test_period' will be used and c3p0-style property 'c3p0.idle_test_period' will be ignored!
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.acquire_increment' and c3p0-style property 'c3p0.acquire_increment' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.acquire_increment' will be used and c3p0-style property 'c3p0.acquire_increment' will be ignored!
+2012-05-24 21:13:05 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_statements' and c3p0-style property 'c3p0.max_statements' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statements' will be used and c3p0-style property 'c3p0.max_statements' will be ignored!
+2012-05-24 21:13:05 [com.mchange.v2.log.MLog]-[INFO] MLog clients using log4j logging.
+2012-05-24 21:13:06 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2012-05-24 21:13:06 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@7dab173a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d1f19d03 [ acquireIncrement -> 6, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15w8nz8cxgufgaeu5|39d811, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 6, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@dd4d51ed [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15w8nz8cxgufgaeu5|5b24c, jdbcUrl -> jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15w8nz8cxgufgaeu5|cdd54e, numHelperThreads -> 3 ]
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] RDBMS: MySQL, version: 5.0.51b-community-nt
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+2012-05-24 21:13:07 [org.hibernate.dialect.Dialect]-[INFO] Using dialect: org.hibernate.dialect.MySQLDialect
+2012-05-24 21:13:07 [org.hibernate.transaction.TransactionFactoryFactory]-[INFO] Using default transaction strategy (direct JDBC transactions)
+2012-05-24 21:13:07 [org.hibernate.transaction.TransactionManagerLookupFactory]-[INFO] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic flush during beforeCompletion(): disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic session close at end of transaction: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch size: 15
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch updates for versioned data: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Scrollable result sets: enabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC3 getGeneratedKeys(): enabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Connection release mode: auto
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Maximum outer join fetch depth: 2
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Default batch fetch size: 1
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Generate SQL with comments: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL updates by primary key: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL inserts for batching: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-05-24 21:13:07 [org.hibernate.hql.ast.ASTQueryTranslatorFactory]-[INFO] Using ASTQueryTranslatorFactory
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Query language substitutions: {}
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] JPA-QL strict compliance: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Second-level cache: enabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Query cache: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Cache provider: org.hibernate.cache.NoCacheProvider
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Optimize cache for minimal puts: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Structured second-level cache entries: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Statistics: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Deleted entity synthetic identifier rollback: disabled
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Default entity-mode: pojo
+2012-05-24 21:13:07 [org.hibernate.cfg.SettingsFactory]-[INFO] Named query checking : enabled
+2012-05-24 21:13:07 [org.hibernate.impl.SessionFactoryImpl]-[INFO] building session factory
+2012-05-24 21:13:10 [org.hibernate.impl.SessionFactoryObjectFactory]-[INFO] Not binding factory to JNDI, no JNDI name configured
+2012-05-24 21:13:25 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.startUpdate()
+2012-05-24 21:14:05 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-05-24 21:14:33 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateUserModule.exitCheck()
+2012-05-24 21:14:35 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-05-24 21:14:44 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-24 21:15:13 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-24 21:15:26 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-24 21:15:37 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-24 21:17:01 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-24 21:17:40 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-24 21:17:52 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-05-24 21:25:36 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateUserModule.exitCheck()
+2012-05-24 21:25:38 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.stopUpdate()
+2012-07-17 11:58:23 [org.directwebremoting.impl.StartupUtil]-[INFO] DWR Version 2.0.3 starting.
+2012-07-17 11:58:23 [org.directwebremoting.impl.StartupUtil]-[INFO] - Servlet Engine: Apache Tomcat/6.0.20
+2012-07-17 11:58:23 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Version:   1.6.0_10-rc2
+2012-07-17 11:58:23 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Vendor:    Sun Microsystems Inc.
+2012-07-17 11:58:23 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Document is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-07-17 11:58:23 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Element is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-08-11 20:21:40 [org.directwebremoting.impl.StartupUtil]-[INFO] DWR Version 2.0.3 starting.
+2012-08-11 20:21:40 [org.directwebremoting.impl.StartupUtil]-[INFO] - Servlet Engine: Apache Tomcat/6.0.20
+2012-08-11 20:21:40 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Version:   1.6.0_18
+2012-08-11 20:21:40 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Vendor:    Sun Microsystems Inc.
+2012-08-11 20:21:40 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Document is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-08-11 20:21:40 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Element is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-08-11 20:22:17 [org.hibernate.cfg.Environment]-[INFO] Hibernate 3.2.6
+2012-08-11 20:22:17 [org.hibernate.cfg.Environment]-[INFO] hibernate.properties not found
+2012-08-11 20:22:17 [org.hibernate.cfg.Environment]-[INFO] Bytecode provider name : cglib
+2012-08-11 20:22:17 [org.hibernate.cfg.Environment]-[INFO] using JDK 1.4 java.sql.Timestamp handling
+2012-08-11 20:22:17 [org.hibernate.cfg.Configuration]-[INFO] configuring from resource: /hibernate.cfg.xml
+2012-08-11 20:22:17 [org.hibernate.cfg.Configuration]-[INFO] Configuration resource: /hibernate.cfg.xml
+2012-08-11 20:22:18 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorWebInfo.hbm.xml
+2012-08-11 20:22:18 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorWebInfo -> monitor_web_info
+2012-08-11 20:22:18 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfo.hbm.xml
+2012-08-11 20:22:18 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfo -> module_info
+2012-08-11 20:22:18 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleSubgroupInfo.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleSubgroupInfo -> user_module_subgroup_info
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentBuffer.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentBuffer -> content_buffer
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MessageNeedToBeSendView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MessageNeedToBeSendView -> message_need_to_be_send_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModulesLinkView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModulesLinkView -> modules_link_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfoShowView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfoShowView -> module_info_show_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleNeedToBeUpdateView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleNeedToBeUpdateView -> module_need_to_be_update_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentNeedToBeSendView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentNeedToBeSendView -> content_need_to_be_send_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MailNeedToBeSendView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MailNeedToBeSendView -> mail_need_to_be_send_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ReceiverView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ReceiverView -> receiver_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleInfo.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleInfo -> user_module_info
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserInfo.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserInfo -> user_info
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserDefaultReceiveInfo.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserDefaultReceiveInfo -> user_default_receive_info
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserActivecode.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserActivecode -> user_activecode
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentReceiver.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentReceiver -> content_receiver
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UsermoduleView.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UsermoduleView -> usermodule_view
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserReceiveInfo.hbm.xml
+2012-08-11 20:22:19 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserReceiveInfo -> user_receive_info
+2012-08-11 20:22:19 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorByJsView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorByJsView -> monitor_by_js_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceInfo.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceInfo -> user_space_info
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ManagerInfo.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ManagerInfo -> manager_info
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSubscribe.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSubscribe -> user_subscribe
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleContents.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleContents -> user_module_contents
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateView -> check_update_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceModuleInfoShowView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceModuleInfoShowView -> user_space_module_info_show_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryView -> user_module_history_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryListView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryListView -> user_module_history_list_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleDisingoreView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleDisingoreView -> user_module_disingore_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserFocusWebModuleView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserFocusWebModuleView -> user_focus_web_module_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleUpdatepathsView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleUpdatepathsView -> user_module_updatepaths_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateUserModuleView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateUserModuleView -> check_update_user_module_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailModuleView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailModuleView -> fail_module_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleHistoyNumView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleHistoyNumView -> module_histoy_num_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailWebInfoView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailWebInfoView -> fail_web_info_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/WebUserModulesView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.WebUserModulesView -> web_user_modules_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleUserModulesView.hbm.xml
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleUserModulesView -> module_user_modules_view
+2012-08-11 20:22:20 [org.hibernate.cfg.Configuration]-[INFO] Configured SessionFactory: null
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.MonitorWebInfo.moduleInfos -> module_info
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.contentBuffers -> content_buffer
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.userModuleInfos -> user_module_info
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleSubgroupInfo.userModuleInfos -> user_module_info
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ContentBuffer.contentReceivers -> content_receiver
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.userReceiveInfos -> user_receive_info
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.contentReceivers -> content_receiver
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForSubscribeUserId -> user_subscribe
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userDefaultReceiveInfos -> user_default_receive_info
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForUserId -> user_subscribe
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSpaceInfos -> user_space_info
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userActivecodes -> user_activecode
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleInfos -> user_module_info
+2012-08-11 20:22:20 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleSubgroupInfos -> user_module_subgroup_info
+2012-08-11 20:22:20 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8
+2012-08-11 20:22:20 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] Connection properties: {user=root, password=****}
+2012-08-11 20:22:20 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] autocommit mode: false
+2012-08-11 20:22:21 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2012-08-11 20:22:21 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2012-08-11 20:22:21 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.timeout' and c3p0-style property 'c3p0.timeout' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.timeout' will be used and c3p0-style property 'c3p0.timeout' will be ignored!
+2012-08-11 20:22:21 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.idle_test_period' and c3p0-style property 'c3p0.idle_test_period' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.idle_test_period' will be used and c3p0-style property 'c3p0.idle_test_period' will be ignored!
+2012-08-11 20:22:21 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.acquire_increment' and c3p0-style property 'c3p0.acquire_increment' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.acquire_increment' will be used and c3p0-style property 'c3p0.acquire_increment' will be ignored!
+2012-08-11 20:22:21 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_statements' and c3p0-style property 'c3p0.max_statements' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statements' will be used and c3p0-style property 'c3p0.max_statements' will be ignored!
+2012-08-11 20:22:21 [com.mchange.v2.log.MLog]-[INFO] MLog clients using log4j logging.
+2012-08-11 20:22:22 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2012-08-11 20:22:22 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@4967a837 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@92992ea7 [ acquireIncrement -> 6, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y8p603vc1cokdl|1950993, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 6, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@97c22db7 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15y8p603vc1cokdl|164892b, jdbcUrl -> jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15y8p603vc1cokdl|1d0d5b4, numHelperThreads -> 3 ]
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] RDBMS: MySQL, version: 5.0.51b-community-nt
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+2012-08-11 20:22:23 [org.hibernate.dialect.Dialect]-[INFO] Using dialect: org.hibernate.dialect.MySQLDialect
+2012-08-11 20:22:23 [org.hibernate.transaction.TransactionFactoryFactory]-[INFO] Using default transaction strategy (direct JDBC transactions)
+2012-08-11 20:22:23 [org.hibernate.transaction.TransactionManagerLookupFactory]-[INFO] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic flush during beforeCompletion(): disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic session close at end of transaction: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch size: 15
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch updates for versioned data: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Scrollable result sets: enabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC3 getGeneratedKeys(): enabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Connection release mode: auto
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Maximum outer join fetch depth: 2
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Default batch fetch size: 1
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Generate SQL with comments: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL updates by primary key: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL inserts for batching: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-08-11 20:22:23 [org.hibernate.hql.ast.ASTQueryTranslatorFactory]-[INFO] Using ASTQueryTranslatorFactory
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Query language substitutions: {}
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] JPA-QL strict compliance: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Second-level cache: enabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Query cache: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Cache provider: org.hibernate.cache.NoCacheProvider
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Optimize cache for minimal puts: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Structured second-level cache entries: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Statistics: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Deleted entity synthetic identifier rollback: disabled
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Default entity-mode: pojo
+2012-08-11 20:22:23 [org.hibernate.cfg.SettingsFactory]-[INFO] Named query checking : enabled
+2012-08-11 20:22:23 [org.hibernate.impl.SessionFactoryImpl]-[INFO] building session factory
+2012-08-11 20:22:26 [org.hibernate.impl.SessionFactoryObjectFactory]-[INFO] Not binding factory to JNDI, no JNDI name configured
+2012-08-11 20:22:30 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-08-11 20:23:57 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateUserModule.exitCheck()
+2012-08-11 20:24:32 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: addModule.checkModuleInfo()
+2012-08-12 14:06:18 [org.directwebremoting.impl.StartupUtil]-[INFO] DWR Version 2.0.3 starting.
+2012-08-12 14:06:18 [org.directwebremoting.impl.StartupUtil]-[INFO] - Servlet Engine: Apache Tomcat/6.0.20
+2012-08-12 14:06:18 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Version:   1.6.0_18
+2012-08-12 14:06:18 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Vendor:    Sun Microsystems Inc.
+2012-08-12 14:06:19 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Document is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-08-12 14:06:19 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Element is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-08-12 14:10:39 [org.hibernate.cfg.Environment]-[INFO] Hibernate 3.2.6
+2012-08-12 14:10:39 [org.hibernate.cfg.Environment]-[INFO] hibernate.properties not found
+2012-08-12 14:10:39 [org.hibernate.cfg.Environment]-[INFO] Bytecode provider name : cglib
+2012-08-12 14:10:39 [org.hibernate.cfg.Environment]-[INFO] using JDK 1.4 java.sql.Timestamp handling
+2012-08-12 14:10:39 [org.hibernate.cfg.Configuration]-[INFO] configuring from resource: /hibernate.cfg.xml
+2012-08-12 14:10:39 [org.hibernate.cfg.Configuration]-[INFO] Configuration resource: /hibernate.cfg.xml
+2012-08-12 14:10:39 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorWebInfo.hbm.xml
+2012-08-12 14:10:39 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorWebInfo -> monitor_web_info
+2012-08-12 14:10:40 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfo.hbm.xml
+2012-08-12 14:10:40 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfo -> module_info
+2012-08-12 14:10:40 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleSubgroupInfo.hbm.xml
+2012-08-12 14:10:40 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleSubgroupInfo -> user_module_subgroup_info
+2012-08-12 14:10:40 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentBuffer.hbm.xml
+2012-08-12 14:10:40 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentBuffer -> content_buffer
+2012-08-12 14:10:40 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MessageNeedToBeSendView.hbm.xml
+2012-08-12 14:10:40 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MessageNeedToBeSendView -> message_need_to_be_send_view
+2012-08-12 14:10:40 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModulesLinkView.hbm.xml
+2012-08-12 14:10:40 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModulesLinkView -> modules_link_view
+2012-08-12 14:10:40 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfoShowView.hbm.xml
+2012-08-12 14:10:40 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfoShowView -> module_info_show_view
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleNeedToBeUpdateView.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleNeedToBeUpdateView -> module_need_to_be_update_view
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentNeedToBeSendView.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentNeedToBeSendView -> content_need_to_be_send_view
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MailNeedToBeSendView.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MailNeedToBeSendView -> mail_need_to_be_send_view
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ReceiverView.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ReceiverView -> receiver_view
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleInfo.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleInfo -> user_module_info
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserInfo.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserInfo -> user_info
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserDefaultReceiveInfo.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserDefaultReceiveInfo -> user_default_receive_info
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserActivecode.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserActivecode -> user_activecode
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentReceiver.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentReceiver -> content_receiver
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UsermoduleView.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UsermoduleView -> usermodule_view
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserReceiveInfo.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserReceiveInfo -> user_receive_info
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorByJsView.hbm.xml
+2012-08-12 14:10:41 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorByJsView -> monitor_by_js_view
+2012-08-12 14:10:41 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceInfo.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceInfo -> user_space_info
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ManagerInfo.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ManagerInfo -> manager_info
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSubscribe.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSubscribe -> user_subscribe
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleContents.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleContents -> user_module_contents
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateView -> check_update_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceModuleInfoShowView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceModuleInfoShowView -> user_space_module_info_show_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryView -> user_module_history_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryListView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryListView -> user_module_history_list_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleDisingoreView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleDisingoreView -> user_module_disingore_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserFocusWebModuleView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserFocusWebModuleView -> user_focus_web_module_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleUpdatepathsView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleUpdatepathsView -> user_module_updatepaths_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateUserModuleView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateUserModuleView -> check_update_user_module_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailModuleView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailModuleView -> fail_module_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleHistoyNumView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleHistoyNumView -> module_histoy_num_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailWebInfoView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailWebInfoView -> fail_web_info_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/WebUserModulesView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.WebUserModulesView -> web_user_modules_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleUserModulesView.hbm.xml
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleUserModulesView -> module_user_modules_view
+2012-08-12 14:10:42 [org.hibernate.cfg.Configuration]-[INFO] Configured SessionFactory: null
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.MonitorWebInfo.moduleInfos -> module_info
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.contentBuffers -> content_buffer
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.userModuleInfos -> user_module_info
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleSubgroupInfo.userModuleInfos -> user_module_info
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ContentBuffer.contentReceivers -> content_receiver
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.userReceiveInfos -> user_receive_info
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.contentReceivers -> content_receiver
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForSubscribeUserId -> user_subscribe
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userDefaultReceiveInfos -> user_default_receive_info
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForUserId -> user_subscribe
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSpaceInfos -> user_space_info
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userActivecodes -> user_activecode
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleInfos -> user_module_info
+2012-08-12 14:10:42 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleSubgroupInfos -> user_module_subgroup_info
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] Connection properties: {user=root, password=****}
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] autocommit mode: false
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.timeout' and c3p0-style property 'c3p0.timeout' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.timeout' will be used and c3p0-style property 'c3p0.timeout' will be ignored!
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.idle_test_period' and c3p0-style property 'c3p0.idle_test_period' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.idle_test_period' will be used and c3p0-style property 'c3p0.idle_test_period' will be ignored!
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.acquire_increment' and c3p0-style property 'c3p0.acquire_increment' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.acquire_increment' will be used and c3p0-style property 'c3p0.acquire_increment' will be ignored!
+2012-08-12 14:10:42 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_statements' and c3p0-style property 'c3p0.max_statements' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statements' will be used and c3p0-style property 'c3p0.max_statements' will be ignored!
+2012-08-12 14:10:43 [com.mchange.v2.log.MLog]-[INFO] MLog clients using log4j logging.
+2012-08-12 14:10:44 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2012-08-12 14:10:44 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@6b3613f7 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@20c39b25 [ acquireIncrement -> 6, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15y8p729soj1beewpv|af5541, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 6, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@6f65b8c8 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge15y8p729soj1beewpv|3bbf5a, jdbcUrl -> jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge15y8p729soj1beewpv|72e5af, numHelperThreads -> 3 ]
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] RDBMS: MySQL, version: 5.0.51b-community-nt
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+2012-08-12 14:10:45 [org.hibernate.dialect.Dialect]-[INFO] Using dialect: org.hibernate.dialect.MySQLDialect
+2012-08-12 14:10:45 [org.hibernate.transaction.TransactionFactoryFactory]-[INFO] Using default transaction strategy (direct JDBC transactions)
+2012-08-12 14:10:45 [org.hibernate.transaction.TransactionManagerLookupFactory]-[INFO] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic flush during beforeCompletion(): disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic session close at end of transaction: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch size: 15
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch updates for versioned data: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Scrollable result sets: enabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC3 getGeneratedKeys(): enabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Connection release mode: auto
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Maximum outer join fetch depth: 2
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Default batch fetch size: 1
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Generate SQL with comments: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL updates by primary key: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL inserts for batching: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-08-12 14:10:45 [org.hibernate.hql.ast.ASTQueryTranslatorFactory]-[INFO] Using ASTQueryTranslatorFactory
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Query language substitutions: {}
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] JPA-QL strict compliance: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Second-level cache: enabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Query cache: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Cache provider: org.hibernate.cache.NoCacheProvider
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Optimize cache for minimal puts: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Structured second-level cache entries: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Statistics: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Deleted entity synthetic identifier rollback: disabled
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Default entity-mode: pojo
+2012-08-12 14:10:45 [org.hibernate.cfg.SettingsFactory]-[INFO] Named query checking : enabled
+2012-08-12 14:10:45 [org.hibernate.impl.SessionFactoryImpl]-[INFO] building session factory
+2012-08-12 14:10:47 [org.hibernate.impl.SessionFactoryObjectFactory]-[INFO] Not binding factory to JNDI, no JNDI name configured
+2012-08-12 14:10:52 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.startUpdate()
+2012-08-12 14:12:09 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.startUpdate()
+2012-08-12 14:27:44 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-08-12 14:28:05 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-08-12 14:28:29 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-08-12 14:28:40 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-08-12 14:29:24 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-08-12 14:30:44 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-08-12 14:31:48 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.stopUpdate()
+2012-08-12 14:33:02 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-08-12 14:33:08 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-08-12 14:34:31 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateUserModule.exitCheck()
+2012-09-01 19:20:23 [org.directwebremoting.impl.StartupUtil]-[INFO] DWR Version 2.0.3 starting.
+2012-09-01 19:20:23 [org.directwebremoting.impl.StartupUtil]-[INFO] - Servlet Engine: Apache Tomcat/6.0.20
+2012-09-01 19:20:23 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Version:   1.6.0_18
+2012-09-01 19:20:23 [org.directwebremoting.impl.StartupUtil]-[INFO] - Java Vendor:    Sun Microsystems Inc.
+2012-09-01 19:20:24 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Document is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-09-01 19:20:24 [org.directwebremoting.dwrp.DefaultConverterManager]-[INFO] Probably not an issue: org.jdom.Element is not available so the jdom converter will not load. This is only an problem if you wanted to use it.
+2012-09-01 19:21:59 [org.hibernate.cfg.Environment]-[INFO] Hibernate 3.2.6
+2012-09-01 19:21:59 [org.hibernate.cfg.Environment]-[INFO] hibernate.properties not found
+2012-09-01 19:21:59 [org.hibernate.cfg.Environment]-[INFO] Bytecode provider name : cglib
+2012-09-01 19:21:59 [org.hibernate.cfg.Environment]-[INFO] using JDK 1.4 java.sql.Timestamp handling
+2012-09-01 19:21:59 [org.hibernate.cfg.Configuration]-[INFO] configuring from resource: /hibernate.cfg.xml
+2012-09-01 19:21:59 [org.hibernate.cfg.Configuration]-[INFO] Configuration resource: /hibernate.cfg.xml
+2012-09-01 19:21:59 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorWebInfo.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorWebInfo -> monitor_web_info
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfo.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfo -> module_info
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleSubgroupInfo.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleSubgroupInfo -> user_module_subgroup_info
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentBuffer.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentBuffer -> content_buffer
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MessageNeedToBeSendView.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MessageNeedToBeSendView -> message_need_to_be_send_view
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModulesLinkView.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModulesLinkView -> modules_link_view
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleInfoShowView.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleInfoShowView -> module_info_show_view
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleNeedToBeUpdateView.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleNeedToBeUpdateView -> module_need_to_be_update_view
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentNeedToBeSendView.hbm.xml
+2012-09-01 19:22:00 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentNeedToBeSendView -> content_need_to_be_send_view
+2012-09-01 19:22:00 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MailNeedToBeSendView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MailNeedToBeSendView -> mail_need_to_be_send_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ReceiverView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ReceiverView -> receiver_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleInfo.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleInfo -> user_module_info
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserInfo.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserInfo -> user_info
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserDefaultReceiveInfo.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserDefaultReceiveInfo -> user_default_receive_info
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserActivecode.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserActivecode -> user_activecode
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ContentReceiver.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ContentReceiver -> content_receiver
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UsermoduleView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UsermoduleView -> usermodule_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserReceiveInfo.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserReceiveInfo -> user_receive_info
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/MonitorByJsView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.MonitorByJsView -> monitor_by_js_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceInfo.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceInfo -> user_space_info
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ManagerInfo.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ManagerInfo -> manager_info
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSubscribe.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSubscribe -> user_subscribe
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleContents.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleContents -> user_module_contents
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateView -> check_update_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserSpaceModuleInfoShowView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserSpaceModuleInfoShowView -> user_space_module_info_show_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryView -> user_module_history_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleHistoryListView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleHistoryListView -> user_module_history_list_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleDisingoreView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleDisingoreView -> user_module_disingore_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserFocusWebModuleView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserFocusWebModuleView -> user_focus_web_module_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/UserModuleUpdatepathsView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.UserModuleUpdatepathsView -> user_module_updatepaths_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/CheckUpdateUserModuleView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.CheckUpdateUserModuleView -> check_update_user_module_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailModuleView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailModuleView -> fail_module_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleHistoyNumView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleHistoyNumView -> module_histoy_num_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/FailWebInfoView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.FailWebInfoView -> fail_web_info_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/WebUserModulesView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.WebUserModulesView -> web_user_modules_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Reading mappings from resource : com/kingway/model/ModuleUserModulesView.hbm.xml
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping class: com.kingway.model.ModuleUserModulesView -> module_user_modules_view
+2012-09-01 19:22:01 [org.hibernate.cfg.Configuration]-[INFO] Configured SessionFactory: null
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.MonitorWebInfo.moduleInfos -> module_info
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.contentBuffers -> content_buffer
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ModuleInfo.userModuleInfos -> user_module_info
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleSubgroupInfo.userModuleInfos -> user_module_info
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.ContentBuffer.contentReceivers -> content_receiver
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.userReceiveInfos -> user_receive_info
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserModuleInfo.contentReceivers -> content_receiver
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForSubscribeUserId -> user_subscribe
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userDefaultReceiveInfos -> user_default_receive_info
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSubscribesForUserId -> user_subscribe
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userSpaceInfos -> user_space_info
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userActivecodes -> user_activecode
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleInfos -> user_module_info
+2012-09-01 19:22:01 [org.hibernate.cfg.HbmBinder]-[INFO] Mapping collection: com.kingway.model.UserInfo.userModuleSubgroupInfos -> user_module_subgroup_info
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] Connection properties: {user=root, password=****}
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[INFO] autocommit mode: false
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_size' and c3p0-style property 'c3p0.max_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_size' will be used and c3p0-style property 'c3p0.max_size' will be ignored!
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.min_size' and c3p0-style property 'c3p0.min_size' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.min_size' will be used and c3p0-style property 'c3p0.min_size' will be ignored!
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.timeout' and c3p0-style property 'c3p0.timeout' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.timeout' will be used and c3p0-style property 'c3p0.timeout' will be ignored!
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.idle_test_period' and c3p0-style property 'c3p0.idle_test_period' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.idle_test_period' will be used and c3p0-style property 'c3p0.idle_test_period' will be ignored!
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.acquire_increment' and c3p0-style property 'c3p0.acquire_increment' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.acquire_increment' will be used and c3p0-style property 'c3p0.acquire_increment' will be ignored!
+2012-09-01 19:22:02 [org.hibernate.connection.C3P0ConnectionProvider]-[WARN] Both hibernate-style property 'hibernate.c3p0.max_statements' and c3p0-style property 'c3p0.max_statements' have been set in hibernate.properties. Hibernate-style property 'hibernate.c3p0.max_statements' will be used and c3p0-style property 'c3p0.max_statements' will be ignored!
+2012-09-01 19:22:02 [com.mchange.v2.log.MLog]-[INFO] MLog clients using log4j logging.
+2012-09-01 19:22:04 [com.mchange.v2.c3p0.C3P0Registry]-[INFO] Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2012-09-01 19:22:04 [com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]-[INFO] Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@e18b0de9 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@76dcd9c4 [ acquireIncrement -> 6, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge16e8pzy77bg1s9zsp7|10e8647, idleConnectionTestPeriod -> 60, initialPoolSize -> 6, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1800, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 6, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@31feb8a1 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge16e8pzy77bg1s9zsp7|318293, jdbcUrl -> jdbc:mysql://localhost:3306/online_focus?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge16e8pzy77bg1s9zsp7|b4faeb, numHelperThreads -> 3 ]
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] RDBMS: MySQL, version: 5.0.51b-community-nt
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+2012-09-01 19:22:05 [org.hibernate.dialect.Dialect]-[INFO] Using dialect: org.hibernate.dialect.MySQLDialect
+2012-09-01 19:22:05 [org.hibernate.transaction.TransactionFactoryFactory]-[INFO] Using default transaction strategy (direct JDBC transactions)
+2012-09-01 19:22:05 [org.hibernate.transaction.TransactionManagerLookupFactory]-[INFO] No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic flush during beforeCompletion(): disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Automatic session close at end of transaction: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch size: 15
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC batch updates for versioned data: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Scrollable result sets: enabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] JDBC3 getGeneratedKeys(): enabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Connection release mode: auto
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Maximum outer join fetch depth: 2
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Default batch fetch size: 1
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Generate SQL with comments: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL updates by primary key: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Order SQL inserts for batching: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2012-09-01 19:22:05 [org.hibernate.hql.ast.ASTQueryTranslatorFactory]-[INFO] Using ASTQueryTranslatorFactory
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Query language substitutions: {}
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] JPA-QL strict compliance: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Second-level cache: enabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Query cache: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Cache provider: org.hibernate.cache.NoCacheProvider
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Optimize cache for minimal puts: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Structured second-level cache entries: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Statistics: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Deleted entity synthetic identifier rollback: disabled
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Default entity-mode: pojo
+2012-09-01 19:22:05 [org.hibernate.cfg.SettingsFactory]-[INFO] Named query checking : enabled
+2012-09-01 19:22:05 [org.hibernate.impl.SessionFactoryImpl]-[INFO] building session factory
+2012-09-01 19:22:08 [org.hibernate.impl.SessionFactoryObjectFactory]-[INFO] Not binding factory to JNDI, no JNDI name configured
+2012-09-01 19:29:42 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.deleteUnuseContentbuffer()
+2012-09-01 19:29:46 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.deleteUnuse()
+2012-09-01 19:29:51 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: server.startUpdate()
+2012-09-01 19:33:12 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-09-01 19:33:22 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-09-01 19:33:44 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-09-01 19:34:36 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-09-01 19:34:40 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-09-01 19:35:19 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-09-01 19:36:16 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-09-01 19:36:30 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateContentReceiver.deleteARecord()
+2012-09-01 19:36:32 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: updateUserModule.exitCheck()
+2012-09-01 19:36:35 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: checkUpdateUserModule.checkUpdate()
+2012-09-01 19:41:58 [org.directwebremoting.impl.DefaultRemoter]-[INFO] Exec: addModule.checkModuleInfo()

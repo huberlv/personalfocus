@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+		<create creator="new" javascript="verifyauthcode">
+			<param name="class" value="dwr.VerifyAuthCode" />
+		</create>
+		<create creator="new" javascript="modifyModulePathByJs">
+			<param name="class" value="dwr.ModifyModulePath" />
+		</create>
+		<create creator="new" javascript="checkUpdateUserModule">
+			<param name="class" value="dwr.CheckUpdateUserModule" />
+		</create>
+		<create creator="new" javascript="addModule">
+			<param name="class" value="dwr.AddModuleInfo" />
+		</create>
+		<create creator="new" javascript="addModuleInfoByManual">
+			<param name="class" value="dwr.AddModuleInfoByManual" />
+		</create>
+		<create creator="new" javascript="updateUserModule">
+			<param name="class" value="dwr.UpdateUserModule" />
+		</create>
+		<create creator="new" javascript="userSpace">
+			<param name="class" value="dwr.UserSpace" />
+		</create>
+		<create creator="new" javascript="updateContentReceiver">
+			<param name="class" value="dwr.UpdateContentReceiver" />
+		</create>
+		<create creator="new" javascript="server">
+			<param name="class" value="dwr.Server"/>
+		</create>
+
+		<create creator="new" javascript="monitorByJs">
+			<param name="class" value="dwr.MonitorModuleByJs" />
+		</create>
+
+		<create creator="new" javascript="updateModule">
+			<param name="class" value="dwr.UpdateModule" />
+		</create>
+
+		<create creator="new" javascript="updateDefault">
+			<param name="class" value="dwr.UpdateDefault" />
+		</create>
+		
+		<create creator="new" javascript="updateTheme">
+			<param name="class" value="dwr.UpdateTheme" />
+		</create>
+		
+		<create creator="new" javascript="customModule">
+			<param name="class" value="dwr.CustomModule" />
+		</create>
+		<create creator="new" javascript="updateGroup">
+			<param name="class" value="dwr.UpdateGroup" />
+		</create>
+		<create creator="new" javascript="updatePsw">
+			<param name="class" value="dwr.UpdatePsw" />
+		</create>
+		<!-- this is a bad idea for live, but can be useful in testing -->
+		<convert converter="exception" match="java.lang.Exception" />
+		<convert converter="bean" match="java.lang.StackTraceElement" />
+	</allow>
+</dwr>

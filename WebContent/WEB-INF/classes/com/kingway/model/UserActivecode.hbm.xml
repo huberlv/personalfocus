@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserActivecode" table="user_activecode" catalog="online_focus">
+        <id name="activeCodeId" type="java.lang.Long">
+            <column name="activeCodeId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userInfo" class="com.kingway.model.UserInfo" fetch="select">
+            <column name="userId" not-null="true" />
+        </many-to-one>
+        <property name="activeCode" type="string">
+            <column name="activeCode" length="21" not-null="true" />
+        </property>
+        <property name="activeCodeSendTime" type="timestamp">
+            <column name="activeCodeSendTime" length="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

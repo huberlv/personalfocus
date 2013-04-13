@@ -1,0 +1,36 @@
+#friendOuter{
+	position:absolute;
+	display:none;
+	top:55px;
+	width: 200px;
+	background-color:white;
+	z-index: 2500;
+	overflow: hidden;
+}
+#friendlistPanel{
+	position:absolute;
+	width: 200px;
+	
+}
+.friendType {
+	cursor: pointer;
+	margin: 7;
+}
+.friend{
+	margin: 1 px ;
+	padding:2px;
+	cursor: pointer;
+	height: 20px;
+	font-size: 13px;
+}
+
+.typeLayer{
+	font-size: 14px;
+}
+.onlinePortrait ,.offlinePortrait{
+	width: 20px;
+	height: 20p;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 3px;	
+}

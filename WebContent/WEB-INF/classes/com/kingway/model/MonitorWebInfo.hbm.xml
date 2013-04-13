@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+ <class catalog="online_focus" name="com.kingway.model.MonitorWebInfo" table="monitor_web_info">
+  <id name="webId" type="java.lang.Long">
+   <column name="webId"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="webAddress" type="string">
+   <column name="webAddress" not-null="true" unique="true"/>
+  </property>
+  <property generated="never" lazy="false" name="monitorFrequency" type="time">
+   <column length="0" name="monitorFrequency" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="lastMonitorTime" type="timestamp">
+   <column length="0" name="lastMonitorTime" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="isMonitoring" type="boolean">
+   <column name="isMonitoring" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="failTimes" type="int">
+   <column name="failTimes" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="totalMonitorTimes" type="int">
+   <column name="totalMonitorTimes" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="userCount" type="long">
+   <column name="userCount" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="enable" type="int">
+   <column name="enable" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="retryMonitorTime" type="time">
+   <column length="0" name="retryMonitorTime" not-null="true">
+    <comment>å¦??å¤±è´¥ï¼??ä¸?????æµ???¶é??´é?ï¼???½æ?ç½?¡µå°??äº??ip
+                ,ä¹???½æ?ç½??ä¸??</comment>
+   </column>
+  </property>
+  <property generated="never" lazy="false" name="headCssAndScript" type="string">
+   <column length="16777215" name="headCssAndScript"/>
+  </property>
+  <property generated="never" lazy="false" name="bodyCssAndScript" type="string">
+   <column length="16777215" name="bodyCssAndScript"/>
+  </property>
+  <set fetch="select" inverse="true" lazy="true" name="moduleInfos"
+   sort="unsorted" table="module_info">
+   <key>
+    <column name="webId" not-null="true"/>
+   </key>
+   <one-to-many class="com.kingway.model.ModuleInfo"/>
+  </set>
+ 
+ </class>
+</hibernate-mapping>

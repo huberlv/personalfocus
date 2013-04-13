@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 15:00:05 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ContentReceiverView" table="content_receiver_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.ContentReceiverViewId">
+            <key-property name="sendType" type="int">
+                <column name="sendType" />
+            </key-property>
+            <key-property name="userId" type="long">
+                <column name="userId" />
+            </key-property>
+            <key-property name="sendId" type="long">
+                <column name="sendId" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

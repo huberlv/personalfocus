@@ -1,0 +1,163 @@
+
+.updateStyle{
+	background-color: #00FF33 !important;
+	}
+#olpfstip { /*鼠标提示*/
+	position:absolute;
+	z-index:2147483647;
+	width:auto;
+	border:#FEFFD4 solid 1px;
+	text-align:left;
+	padding:3px;
+	background:#006CDB;
+}
+#oftooltips {
+	display: table-row;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-style:normal;
+	color:#FFFFFF;
+	background-color:#66CCFF;
+	line-height: 1em;
+		margin: 0px 0px;
+}
+#oftooltips tr{
+		line-height: 1.5em;
+			margin: 0px 0px;
+	}
+	#oftooltips tr td{
+		line-height: 1.5em;
+			margin: 0px 0px;
+	}
+		#oftooltips tr td p{
+		line-height: 1.5em;
+		margin: 0px 0px;
+	}
+#topTips{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:auto;
+	z-index:2147483645;
+	background-color:#66CCFF;
+	font-size: 14px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+#olpfstip p {
+	margin:0;
+	padding:0;
+	color:#FFFFFE;
+	font:12px verdana, arial, sans-serif;
+}
+
+#olpfstip p em {
+	display:block;
+	margin-top:3px;
+	color:#f60;
+	font-style:normal;
+	font-weight:bold;
+		-moz-opacity:0.9;
+	opacity:0.9;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+}
+
+#waitDiv {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+    z-index:2147483645;
+	background-color:#66CCFF;
+	font-size:20;
+	-moz-opacity:0.2;
+	opacity:0.2;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+	
+}
+#defineTable{
+	z-index:2147483647;
+	position:fixed;
+	width:600px;
+	top:-1000px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	line-height: 0px;
+	}
+#defineTable table{
+	line-height: 0px;
+	padding:0px;
+	margin:0px 0px;
+}
+#defineTable table tbody{
+
+	padding:0px;
+	margin:0px 0px;
+}  
+#defineTable table tbody tr{
+
+	padding:0px;
+	margin:0px 0px;
+} 
+#defineTable table tbody tr td{
+
+	padding:0px;
+	margin:0px 0px;
+} 
+/*定义窗口样式*/
+.olpfClass {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-style:normal;
+	line-height:1.5em;
+	font-weight:normal;
+	font-variant:normal;
+	color:#FFFFFF;
+	border-top-style:inset;
+	border-right-style:inset;
+	border-bottom-style:inset;
+	border-left-style:inset;
+	border-top-width:2px;
+	border-right-width:2px;
+	border-bottom-width:2px;
+	border-left-width:2px;
+	cursor:auto;
+	z-index:2147483640;
+	background-color:#66CCFF;
+	text-indent:20px;
+
+}
+
+#showChoiceDiv {
+	position:absolute;
+	top:-1000px;
+	z-index:2147483647;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #66CCFF;
+	border: 3px outset #66FFFF;
+	padding: 5px;
+}
+#topTips{
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+    z-index:2147483647;
+	background-color:#66CCFF;
+	-moz-opacity:0.8;
+	opacity:0.8;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	
+}

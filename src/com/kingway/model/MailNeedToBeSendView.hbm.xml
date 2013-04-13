@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-25 22:38:40 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.MailNeedToBeSendView" table="mail_need_to_be_send_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.MailNeedToBeSendViewId">
+            <key-property name="userId" type="long">
+                <column name="userId" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="userName" length="10" />
+            </key-property>
+            <key-property name="mail" type="string">
+                <column name="mail" length="30" />
+            </key-property>
+            <key-property name="userModuleName" type="string">
+                <column name="userModuleName" length="20" />
+            </key-property>
+            <key-property name="websiteName" type="string">
+                <column name="websiteName" length="20" />
+            </key-property>
+            <key-property name="contentId" type="long">
+                <column name="contentId" />
+            </key-property>
+            <key-property name="updateTime" type="timestamp">
+                <column name="updateTime" length="0" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

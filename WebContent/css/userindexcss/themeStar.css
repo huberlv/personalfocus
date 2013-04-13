@@ -1,0 +1,14 @@
+BODY {
+	text-align:center;
+	background-image: url(/personalfocus/images/theme/star/bg.gif);
+}
+
+#background{
+	width:1250px;
+	height: 620px;
+	position:absolute;
+	top: 45px;
+	left:0px;
+	background-image: url(/personalfocus/images/theme/star/bg.gif);
+	z-index: -1;
+}

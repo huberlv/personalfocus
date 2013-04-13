@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="personalfocus"
+  id="myeclipse.1300871013015"
+  context-root="/personalfocus"
+  j2ee-spec="5.0"
+  archive="personalfocus.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebContent" />
+  </attributes>
+</project-module>
+

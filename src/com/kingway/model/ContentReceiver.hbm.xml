@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ContentReceiver" table="content_receiver" catalog="online_focus">
+        <id name="sendId" type="java.lang.Long">
+            <column name="sendId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="contentBuffer" class="com.kingway.model.ContentBuffer" fetch="select">
+            <column name="bufferId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="userModuleInfo" class="com.kingway.model.UserModuleInfo" fetch="select">
+            <column name="userModuleId" not-null="true" />
+        </many-to-one>
+        <property name="sendType" type="int">
+            <column name="sendType" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

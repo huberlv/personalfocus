@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-11-28 21:08:00 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.ContentNeedToBeSendView" table="content_need_to_be_send_view" catalog="online_focus">
+        <composite-id name="id" class="com.kingway.model.ContentNeedToBeSendViewId">
+            <key-property name="userModuleName" type="string">
+                <column name="userModuleName" length="20" />
+            </key-property>
+            <key-property name="moduleId" type="long">
+                <column name="moduleId" />
+            </key-property>
+            <key-property name="userModuleId" type="long">
+                <column name="userModuleId" />
+            </key-property>
+            <key-property name="contentType" type="int">
+                <column name="contentType" />
+            </key-property>
+            <key-property name="userId" type="long">
+                <column name="userId" />
+            </key-property>
+            <key-property name="contentId" type="long">
+                <column name="contentId" />
+            </key-property>
+            <key-property name="subgroupId" type="java.lang.Long">
+                <column name="subgroupId" />
+            </key-property>
+            <key-property name="groupName" type="string">
+                <column name="groupName" length="10" />
+            </key-property>
+            <key-property name="alreadySendMessage" type="int">
+                <column name="alreadySendMessage" />
+            </key-property>
+            <key-property name="alreadySendMail" type="int">
+                <column name="alreadySendMail" />
+            </key-property>
+            <key-property name="ignoreByUser" type="int">
+                <column name="ignoreByUser" />
+            </key-property>
+            <key-property name="monitorType" type="java.lang.Integer">
+                <column name="monitorType" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

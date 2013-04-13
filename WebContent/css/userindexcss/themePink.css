@@ -1,0 +1,14 @@
+BODY {
+	text-align:center;
+	background-image: url(/personalfocus/images/theme/pink/b2.jpg);
+}
+
+#background{
+	width:1250px;
+	height: 620px;
+	position:absolute;
+	top: 45px;
+	left:0px;
+	background-image: url(/personalfocus/images/theme/pink/2.jpg);
+	z-index: -1;
+}

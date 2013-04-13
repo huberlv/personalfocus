@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2010-10-1 0:21:32 by Hibernate Tools 3.3.0.GA -->
+<hibernate-mapping>
+    <class name="com.kingway.model.UserSubscribe" table="user_subscribe" catalog="online_focus">
+        <id name="subscribeId" type="java.lang.Long">
+            <column name="subscribeId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="userInfoBySubscribeUserId" class="com.kingway.model.UserInfo" fetch="select">
+            <column name="subscribeUserId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="userInfoByUserId" class="com.kingway.model.UserInfo" fetch="select">
+            <column name="userId" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+package com.kingway.dao;
+/**
+ * 
+ * @author ¬¿∫Ë≈Â
+ *
+ */
+public interface UserMoudleHistoryDao {
+	public String[] getCss();
+    public String getUpdateContent();
+	public String getUserModuleStyle();
+}
