@@ -1,35 +1,30 @@
-package finance.datainit.service;
+package finance.datainit.util;
 
-import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.SocketException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.text.DecimalFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
-import finance.datainit.dao.BaseTest;
+	import java.io.BufferedReader;
+	import java.io.InputStreamReader;
+	import java.net.SocketException;
+	import java.net.URL;
+	import java.net.URLConnection;
+	import java.text.DecimalFormat;
+	import java.text.ParseException;
+	import java.text.SimpleDateFormat;
+	import java.util.ArrayList;
+	import java.util.Calendar;
+	import java.util.Date;
+	import java.util.Locale;
 
 
-public class StockDailyServiceRemoteTest extends BaseTest { 
-    @Autowired
-    private StockDailyServiceRemote stockDailyService;
-    /**
-     * 新增记录
-     */
-	@Test
-    public void testInitStockDaily()throws  Exception{
- 	
-    	Long result=stockDailyService.batchAddStockDaily(stockDailyVO);
-    }
-
-
+	public class GetCsvDataFromYahoo {
+	 public static final String  YAHOO_FINANCE_URL ="http://table.finance.yahoo.com/table.csv?";
+	 public static final String YAHOO_FINANCE_URL_TODAY = "http://download.finance.yahoo.com/d/quotes.csv?";
+	 
+	 private Date x;//time
+	 private double y1 = 0.0;
+	 private double y2 = 0.0;
+	 private double y3 = 0.0;
+	 private double y4 = 0.0;
+	 private double y5 = 0.0;
+	 private double y6 = 0.0;
 	 
 	 public GetCsvDataFromYahoo() {
 	  super();
@@ -152,7 +147,7 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	 }
 	 
 	 
-	 public static ArrayList getStockCsvData(String stockName, int T) throws  Exception {
+	 public static ArrayList getStockCsvData(String  stockName, int T) throws  Exception {
 	  ArrayList list = new ArrayList();
 	  
 	  //===================================================
@@ -170,7 +165,7 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 //	      w->’周’(week)，m->’月’(mouth)，v->’dividendsonly’
 
 	  
-	  String period = "";
+	  String  period = "";
 	  if (T > 0){
 	   //
 	   Calendar cal=Calendar.getInstance(Locale.CHINESE);   
@@ -179,10 +174,10 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	   int f =cal.get(Calendar.YEAR);
 	   
 	   System.out.print("获取数据\t"+ stockName);
-	   System.out.print("\t"+ cal.getTime().toLocaleString());
+	   System.out.print("\t"+ cal.getTime().toLocaleString ());
 	   
 	   cal.add(Calendar.DAY_OF_MONTH, 0 - T);
-	   System.out.println("\t"+ cal.getTime().toLocaleString());
+	   System.out.println("\t"+ cal.getTime().toLocaleString ());
 	   
 	   int a =cal.get(Calendar.MONTH);
 	   int b =cal.get(Calendar.DAY_OF_MONTH);
@@ -194,7 +189,7 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	   period ="";
 	  }
 
-	  String url =YAHOO_FINANCE_URL + "s=" + stockName + period;
+	  String  url =YAHOO_FINANCE_URL + "s=" + stockName + period;
 	  
 	  //=======================================
 	  // 从URL获取数据，并且解析每一行数据
@@ -211,16 +206,16 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	   in = new BufferedReader(ins);
 
 	   //标题行
-	   Stringnew Line = in.readLine();
+	   String newLine = in.readLine();
 	   
 	   //今天的股票数据
 	   // TODOYahoo财经股票数据接口，取得的历史数据不包含今天的股票数据。
 	   list.add(createObject(getStockTodayData(stockName).trim()));
 	      
 	   //历史数据，不含今天数据
-	   while((new Line = in.readLine()) != null) {
+	   while((newLine = in.readLine()) != null) {
 	    //System.out.println(new Line);
-	    list.add(createObject(new Line.trim()));
+	    list.add(createObject(newLine.trim()));
 	   }
 
 	  } catch (Exception ex){
@@ -235,9 +230,9 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	 
 	 
 	 
-	 public static String getStockTodayData(StringstockName) throws  Exception {
+	 public static String  getStockTodayData(String stockName) throws  Exception {
 	   
-	  String result = "";
+	  String  result = "";
 	  //===================================================
 	  // 创建url
 	  //===================================================
@@ -255,7 +250,7 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	//   j  52-week Low  年内最低价
 
 
-	  String url =YAHOO_FINANCE_URL_TODAY + "s=" + stockName +"&f=d1ohgl1vl1";
+	  String  url =YAHOO_FINANCE_URL_TODAY + "s=" + stockName +"&f=d1ohgl1vl1";
 
 	  
 	  //=======================================
@@ -287,11 +282,11 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	 
 	 
 	 
-	 public static GetCsvDataFromYahoocreateObject(String line){
+	 public static GetCsvDataFromYahoocreateObject(String  line){
 	  GetCsvDataFromYahoo point = new GetCsvDataFromYahoo();
 	  int pos = 0;
-	  String format = null;
-	  String [] data = null;
+	  String  format = null;
+	  String  [] data = null;
 	  if(line.indexOf(',')> 0){
 	   data =line.split(",");
 	  } else {
@@ -346,7 +341,7 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	 }
 	 
 	 
-	 static double parseDouble(String data){
+	 static double parseDouble(String  data){
 	  double result = 0.0;
 	  try {
 	   if (data ==null || data.trim().length() == 0)
@@ -362,9 +357,9 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	 
 	 
 	 
-	 public String toString(){
-	  StringBuffer s = new StringBuffer();
-	  s.append(format.format(x).toString());
+	 public String  toString (){
+	  String Buffer s = new String Buffer();
+	  s.append(format.format(x).toString ());
 	  s.append(",");
 	  s.append(df2.format(y1));
 	  s.append(",");
@@ -378,7 +373,7 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	  s.append(",");
 	  s.append(df2.format(y6));
 	  
-	  return s.toString();
+	  return s.toString ();
 	  
 	 }
 	 
@@ -392,14 +387,13 @@ public class StockDailyServiceRemoteTest extends BaseTest {
 	 }
 	 
 	 
-	 public static void main(String args[]) throws Exception{
+	 public static void main(String  args[]) throws Exception{
 	  
 	  // 沪市后缀名.ss 例子： 沪深300 000300.ss,深市后缀名 .sz 例子： 399106.sz
 	  ArrayList list = GetCsvDataFromYahoo.getStockCsvData("399106.sz",185);
 	  GetCsvDataFromYahoo csvData =null;
 	  for(int i = 0 ;i< list.size() ; i++){
 	    csvData =(GetCsvDataFromYahoo)list.get(i);
-	   System.out.println(csvData.toString() );
+	   System.out.println(csvData.toString () );
 	  }
-	 
-}
+	 }
