@@ -17,8 +17,8 @@ public class Test {
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		// TODO Auto-generated method stub
         String html="<html><div><span class='content_r'>22</span><span class='content_r'>11</span></div></html>";
-        String t2="<div name='name1'>´Ë´¦ÏÔÊ¾ name1 µÄÄÚÈÝ</div><div name='name1'>´Ë´¦ÏÔÊ¾ name2 µÄÄÚÈÝ</div>";
-        Document d=Jsoup.parse(new URL("http://localhost:8080/personalfocus/test/1.html"), 50000);
+        String t2="<div name='name1'>ï¿½Ë´ï¿½ï¿½ï¿½Ê¾ name1 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</div><div name='name1'>ï¿½Ë´ï¿½ï¿½ï¿½Ê¾ name2 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</div>";
+        Document d=Jsoup.parse(new URL("http://localhost:8082/personalfocus/test/1.html"), 50000);
        // Document d=Jsoup.parse(html);
        // System.out.println(d.body().html());
       //  Document d=Jsoup.parse(t2);

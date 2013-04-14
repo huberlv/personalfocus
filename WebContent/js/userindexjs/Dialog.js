@@ -1,4 +1,4 @@
-﻿var IMGFOLDERPATH = 'http://localhost:8080/personalfocus/images/';//图片特征配置
+﻿var IMGFOLDERPATH = 'http://localhost:8082/personalfocus/images/';//图片特征配置
 //var IMGFOLDERPATH = 'images/';//图片特征配置
 var CONTEXTPATH = '';//弹出框内页面特征配置
 var isIE = navigator.userAgent.toLowerCase().indexOf("msie") != -1;

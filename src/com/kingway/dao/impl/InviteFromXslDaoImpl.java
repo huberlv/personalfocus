@@ -31,7 +31,7 @@ public class InviteFromXslDaoImpl implements InviteFromXslDao {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		int sheetSize = wb.getSheets().length;// ¹¤×÷²¾ÊýÁ¿
+		int sheetSize = wb.getSheets().length;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 		for (int n = 0; n < sheetSize; n++) {
 			Sheet rs = wb.getSheet(n);
@@ -39,18 +39,18 @@ public class InviteFromXslDaoImpl implements InviteFromXslDao {
 			int phoneCellPosition = 0;
 
 			try {
-				Cell mailCell = rs.findCell("ÓÊÏä");
+				Cell mailCell = rs.findCell("ï¿½ï¿½ï¿½ï¿½");
 				mailCellPosition = mailCell.getColumn();
 				// System.out.println("mailCellPosition"+mailCellPosition);
-				Cell phoneCell = rs.findCell("ÁªÏµµç»°");
+				Cell phoneCell = rs.findCell("ï¿½ï¿½Ïµï¿½ç»°");
 				phoneCellPosition = phoneCell.getColumn();
 				// System.out.println("phoneCellPosition"+phoneCellPosition);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 
-			for (int i = 1; i < rs.getRows(); i++) { // ÐÐÊý£¬¼´¼ÇÂ¼Êý
-				Cell mailCellContent = rs.getCell(mailCellPosition, i); // ²ÎÊýÏÈÁÐºóÐÐ
+			for (int i = 1; i < rs.getRows(); i++) { // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½
+				Cell mailCellContent = rs.getCell(mailCellPosition, i); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðºï¿½ï¿½ï¿½
 				Cell phoneCellContent = rs.getCell(phoneCellPosition, i);
 				mail = mailCellContent.getContents();
 				phone = phoneCellContent.getContents();
@@ -66,7 +66,7 @@ public class InviteFromXslDaoImpl implements InviteFromXslDao {
 	}
 
 	@SuppressWarnings("unchecked")
-	private String createInviteCode() {// Éú³ÉÑûÇëÂë
+	private String createInviteCode() {// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		String inviteCode = "";
 		ArrayList randomList = new ArrayList();
 		for (int i = 0; i < 10; i++)
@@ -98,9 +98,9 @@ public class InviteFromXslDaoImpl implements InviteFromXslDao {
 		System.out.println("end-------------------");
 	}
 
-	private void sendEmail() { // ·¢ËÍÑûÇëÓÊ¼þ
+	private void sendEmail() { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½
 		System.out
-				.println("http://localhost:8080/personalfocus/index/activeAccount?codeId="
+				.println("http://localhost:8082/personalfocus/index/activeAccount?codeId="
 						+ codeId + "&code=" + activeCode);
 	}
 
@@ -111,7 +111,7 @@ public class InviteFromXslDaoImpl implements InviteFromXslDao {
 
 	@Override
 	public Long regist() {
-		return new AddUserDaoImpl().adduser("Î´¶¨Òå", "000000", null, mail, phone,
+		return new AddUserDaoImpl().adduser("Î´ï¿½ï¿½ï¿½ï¿½", "000000", null, mail, phone,
 				null, 0);
 	}
 

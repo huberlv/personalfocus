@@ -259,7 +259,7 @@
 					</P>
 				</DIV>
 				<div class='mobile'>
-					<a href='/personalfocus/mobile/mobileIndex'>手机请访问：http://localhost:8080/personalfocus/mobile/mobileIndex</a>
+					<a href='/personalfocus/mobile/mobileIndex'>手机请访问：http://localhost:8082/personalfocus/mobile/mobileIndex</a>
 				</div>
 				<div class='ps'>
 			PS:测试版暂不提供邮件、短信发送功能！
