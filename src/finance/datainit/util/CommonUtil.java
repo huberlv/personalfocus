@@ -1,6 +1,9 @@
 package finance.datainit.util;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.http.NameValuePair;
@@ -19,6 +22,18 @@ import org.apache.http.protocol.HTTP;
  * @version:	  
  */
 public class CommonUtil{
+	//每次运行前需要配置修改
+	public static int daily_t=3;//多少天
+	public static int  run_stock_num=10000;//初始化ock_base_info数目
+	public static SimpleDateFormat sdfDate =new SimpleDateFormat("yyyy-MM-dd hh:mm");
+	public static Date date_after=null;//抓取这个日期之后的数据
+	static{
+		try {
+			date_after=sdfDate.parse("2013-04-16 09:23");
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	public static int getMaxPage(int total,int pageSize){
 		return total/pageSize+((total%pageSize)>0?1:0);

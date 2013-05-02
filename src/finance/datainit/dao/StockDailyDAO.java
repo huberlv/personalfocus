@@ -58,8 +58,12 @@ public class StockDailyDAO {
 	            paramMap.put("stockId",stockDailyVO.get("stockId"));
         	}
         	if(stockDailyVO.get("dailyId")!=null){
-	            sql.append(" daily_id=:dailyId"); 
+	            sql.append(" daily_id=:dailyId,"); 
 	            paramMap.put("dailyId",stockDailyVO.get("dailyId"));
+        	}
+        	if(stockDailyVO.get("createTime")!=null){
+	            sql.append(" createtime=:createTime"); 
+	            paramMap.put("createTime",stockDailyVO.get("createTime"));
         	}
         	
         	if(sql.length()>0&&sql.charAt(sql.length()-1)==','){
@@ -78,8 +82,8 @@ public class StockDailyDAO {
         
         StringBuilder sql = new StringBuilder();
     	
-        sql.append("INSERT INTO stock_daily(date,open,high,low,close,volume,adjclose,stockid,daily_id)");
-        sql.append(" VALUES (:date,:open,:high,:low,:close,:volume,:adjClose,:stockId,:dailyId)");
+        sql.append("INSERT INTO stock_daily(date,open,high,low,close,volume,adjclose,stockid,daily_id,createtime)");
+        sql.append(" VALUES (:date,:open,:high,:low,:close,:volume,:adjClose,:stockId,:dailyId,:createTime)");
 
         Map<String, Object> paramMap = new HashMap<String, Object>();
         
@@ -92,6 +96,7 @@ public class StockDailyDAO {
     	paramMap.put("adjClose", stockDailyVO.getAdjClose());
     	paramMap.put("stockId", stockDailyVO.getStockId());
     	paramMap.put("dailyId", stockDailyVO.getDailyId());
+    	paramMap.put("createTime", stockDailyVO.getCreateTime());
 
         logger.debug(" About to execute sql={} paramMap={}", new Object[]{sql.toString(), paramMap});
         
@@ -205,12 +210,16 @@ public class StockDailyDAO {
 	            sql.append("   AND daily_id=:dailyId ");
 	            paramMap.put("dailyId",stockDailyVO.get("dailyId"));
 	        }
+        	if(stockDailyVO.get("createTime")!=null){
+	            sql.append("   AND createtime=:createTime ");
+	            paramMap.put("createTime",stockDailyVO.get("createTime"));
+	        }
         }
     }
 
     
     private String getSelectSQL(){
-    	String sql="SELECT date,open,high,low,close,volume,adjclose,stockid,daily_id FROM stock_daily WHERE 1=1 ";
+    	String sql="SELECT date,open,high,low,close,volume,adjclose,stockid,daily_id,createtime FROM stock_daily WHERE 1=1 ";
     	return sql;
     }
   

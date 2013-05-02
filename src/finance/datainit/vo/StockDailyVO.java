@@ -1,18 +1,19 @@
 package finance.datainit.vo;
 
-import java.io.Serializable; 
+import java.io.Serializable;
 import java.util.Date;
 
 public class StockDailyVO implements Serializable{
 	private Date date=null;
 	private Float open=null;
-	private Float high=null; 
+	private Float high=null;
 	private Float low=null;
 	private Float close=null;
 	private Integer volume=null;
 	private Float adjClose=null;
 	private Integer stockId=null;
 	private Integer dailyId=null;
+	private Date createTime=null;
 
 	public void setDate(Date value) {
 		this.date = value;
@@ -77,6 +78,13 @@ public class StockDailyVO implements Serializable{
 	public Integer getDailyId() {
 		return this.dailyId;
 	}
+	public void setCreateTime(Date value) {
+		this.createTime = value;
+	}
+	
+	public Date getCreateTime() {
+		return this.createTime;
+	}
 	@Override
 	public String toString(){
 		StringBuilder result=new StringBuilder();
@@ -108,6 +116,9 @@ public class StockDailyVO implements Serializable{
 		result.append(",");
 		result.append("dailyId=");
 		result.append(dailyId);
+		result.append(",");
+		result.append("createTime=");
+		result.append(createTime);
 		result.append("}");
 		return result.toString();
 	}

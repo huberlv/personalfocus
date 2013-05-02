@@ -201,7 +201,7 @@ public class StockBaseInfoDAO {
 
     
     private String getSelectSQL(){
-    	String sql="SELECT stockid,stockcode,stockname,createtime,eastmoneybarurl,eastmoneycomment,earningsratio,updatedate FROM stock_base_info WHERE 1=1 ";
+    	String sql="SELECT stockid,stockcode,stockname,createtime,eastmoneybarurl,eastmoneycomment,earningsratio,updatedate FROM stock_base_info sb WHERE 1=1 ";
     	return sql;
     }
   
@@ -217,8 +217,10 @@ public class StockBaseInfoDAO {
         sql.append(getSelectSQL());
         
         putWhereParam(stockBaseInfoVO,sql,paramMap);
-        String sqlstr=PaginationParams.convertSqlStatement(sql.toString(), pc, paramMap);
+        String sqlstr=sql.toString();
+        sqlstr=PaginationParams.convertSqlStatement(sqlstr, pc, paramMap);
         logger.debug(" About to execute sql={} paramMap={}", new Object[]{sqlstr, paramMap});
+        
         List<StockBaseInfoVO> result = baseDao.namedParameterJdbcTemplate.query(sqlstr, paramMap, new BeanPropertyRowMapper<StockBaseInfoVO>(StockBaseInfoVO.class));  
         
         logger.debug("End function : getStockBaseInfoListByParam");

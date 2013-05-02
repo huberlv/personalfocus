@@ -5,6 +5,7 @@ import finance.datainit.util.PaginationCondition;
 import finance.datainit.vo.PaginationVO;
 import finance.datainit.vo.StockDailyVO;
 import java.util.Date;
+import java.util.List;
 
 public interface StockDailyServiceRemote {
     /**
@@ -27,9 +28,11 @@ public interface StockDailyServiceRemote {
     /**
      * 查询记录
      */
-    public PaginationVO<StockDailyVO> getPaginationStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId,PaginationCondition pc)throws Exception;
+    public PaginationVO<StockDailyVO> getPaginationStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId,Date createTime,PaginationCondition pc)throws Exception;
     /**
      * 查询总数
      */
-    public int getTotalStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId)throws Exception; 
+    public int getTotalStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId,Date createTime)throws Exception; 
+
+	public boolean batchAddStockDaily(List<StockDailyVO> stockDailyVOs) throws Exception ;
 }

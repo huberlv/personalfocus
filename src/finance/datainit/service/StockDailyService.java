@@ -8,6 +8,7 @@ import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -94,7 +95,7 @@ public class StockDailyService implements StockDailyServiceRemote{
      * 查询记录
      */
     @Override
-    public PaginationVO<StockDailyVO> getPaginationStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId,PaginationCondition pc)throws Exception{
+    public PaginationVO<StockDailyVO> getPaginationStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId,Date createTime,PaginationCondition pc)throws Exception{
     	
     	Map<String,Object> stockDailyVO=new HashMap<String,Object>();  
     	stockDailyVO.put("date",date);
@@ -106,13 +107,14 @@ public class StockDailyService implements StockDailyServiceRemote{
     	stockDailyVO.put("adjClose",adjClose);
     	stockDailyVO.put("stockId",stockId);
     	stockDailyVO.put("dailyId",dailyId);
+    	stockDailyVO.put("createTime",createTime);
     	try{
 	    	PaginationVO<StockDailyVO> result=new PaginationVO<StockDailyVO>();
 	        Map<String, Object> paramMap = new HashMap<String, Object>();
 	        result.setPageNum(pc.getPageNum());
 	        result.setPageSize(pc.getPageSize());
 	        
-	        int total = getTotalStockDailyByParam(date,open,high,low,close,volume,adjClose,stockId,dailyId);
+	        int total = getTotalStockDailyByParam(date,open,high,low,close,volume,adjClose,stockId,dailyId,createTime);
 	        result.setTotal(total);
 	
 	        result.setMaxPage(CommonUtil.getMaxPage(total,pc.getPageSize()));
@@ -131,7 +133,7 @@ public class StockDailyService implements StockDailyServiceRemote{
      * 查询总数
      */
     @Override
-    public int getTotalStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId)throws Exception{
+    public int getTotalStockDailyByParam(Date date,Float open,Float high,Float low,Float close,Integer volume,Float adjClose,Integer stockId,Integer dailyId,Date createTime)throws Exception{
     	
 
     	Map<String,Object> stockDailyVO=new HashMap<String,Object>();  
@@ -144,6 +146,7 @@ public class StockDailyService implements StockDailyServiceRemote{
     	stockDailyVO.put("adjClose",adjClose);
     	stockDailyVO.put("stockId",stockId);
     	stockDailyVO.put("dailyId",dailyId);
+    	stockDailyVO.put("createTime",createTime);
     	try{
 	    	int result=stockDailyDAO.getTotalStockDailyByParam(stockDailyVO);
 	    	logger.info("End function : getTotalStockDailyByParam");
@@ -153,4 +156,18 @@ public class StockDailyService implements StockDailyServiceRemote{
     		throw e;
 		} 
     }
+    
+	@Override @Transactional
+	public boolean batchAddStockDaily(List<StockDailyVO> stockDailyVOs) throws Exception {
+	
+		for (StockDailyVO stockDailyVO : stockDailyVOs) {
+			try{
+				stockDailyDAO.addStockDaily(stockDailyVO);
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		}  
+		return true;
+	}
 }

@@ -156,6 +156,7 @@ public class StockBaseInfoService implements StockBaseInfoServiceRemote{
     
     public boolean batchAddStockBaseInfo(List<StockBaseInfoVO> stockBaseInfoVOs)throws Exception{
     	for (StockBaseInfoVO stockBaseInfoVO : stockBaseInfoVOs) {
+    		try{
     		Map<String ,Object> whereParam=new HashMap<String ,Object>();
     		whereParam.put("stockCode", stockBaseInfoVO.getStockCode());
     		PaginationCondition pc=new PaginationCondition();
@@ -177,6 +178,9 @@ public class StockBaseInfoService implements StockBaseInfoServiceRemote{
     		}else{
     			stockBaseInfoDAO.addStockBaseInfo(stockBaseInfoVO);
     		}
+    		}catch (Exception e) {
+				e.printStackTrace();
+			}
 			
 		}
     	return true;
